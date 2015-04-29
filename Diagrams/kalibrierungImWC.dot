@@ -1,0 +1,70 @@
+digraph WC {
+	{	node [group=g1]
+		Scan_AP [label="Scan an AP"];
+		Scan_AP_SK [label="Scan an AP in SK"];
+		Scan_AP_TK [label="Scan an AP in TK"];
+		Scan_AP_WK [label="Scan an AP in WK"];
+		node [shape=rectangle]
+		Ausgangspose [label="Ausgangspose (AP)", group=g1];
+		node [shape=diamond, width=0.2, height=0.2, label=""]
+		Scan_zu_SK1;
+		SK_zu_TK1;
+		TK_zu_WK1;
+	}
+
+	{	node [group=g2]
+		Bewegung [shape=none, label="Veränderung durch\nBewegung"];
+		IMU [label="IMU"];
+		ICP [shape=doubleoctagon, label="ICP"];
+		MontagePose [shape=rectangle, label="Sensorpose zur IMU", group=g2];
+	}
+
+	{	node [group=g3]
+		Scan_EP [label="Scan an EP"];
+		Scan_EP_SK [label="Scan an EP in SK"];
+		Scan_EP_TK [label="Scan an EP in TK"];
+		Scan_EP_WK [label="Scan an EP in WK"];
+		node [shape=rectangle]
+		Endpose [label="Endpose (EP)", group=g3];
+		node [shape=diamond, width=0.2, height=0.2, label=""]
+		Scan_zu_SK2;
+		SK_zu_TK2;
+		TK_zu_WK2;
+	}
+
+	{	rank=same;
+			Ausgangspose; Endpose; Bewegung;
+	}
+
+	{	rank=same;
+			Scan_zu_SK1; Scan_zu_SK2;
+	}
+
+	{	rank=same;
+			SK_zu_TK1; SK_zu_TK2;
+	}
+
+	{	rank=same;
+			TK_zu_WK1; TK_zu_WK2;
+	}
+
+	{	edge [style=dotted, arrowhead=none]
+		Ausgangspose -> Bewegung;
+		Bewegung -> Endpose;
+		Bewegung -> IMU;
+	}
+	Ausgangspose -> Scan_AP;
+	Endpose -> Scan_EP;
+
+	IMU -> Scan_zu_SK1;
+	IMU -> Scan_zu_SK2;
+	IMU -> TK_zu_WK1;
+
+	MontagePose -> SK_zu_TK1;
+	MontagePose -> SK_zu_TK2;
+
+	Scan_AP -> Scan_zu_SK1 -> Scan_AP_SK -> SK_zu_TK1 -> Scan_AP_TK -> TK_zu_WK1 -> Scan_AP_WK -> ICP;
+	Scan_EP -> Scan_zu_SK2 -> Scan_EP_SK -> SK_zu_TK2 -> Scan_EP_TK -> TK_zu_WK2 -> Scan_EP_WK -> ICP;
+
+	ICP -> MontagePose [style=dotted, label=" update"];
+}

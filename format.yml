@@ -1,0 +1,49 @@
+---
+title: Relative extrinsische Kalibrierung von bildgebenden Umweltsensoren
+subtitle: Masterarbeit
+date: 30.08.2015
+location: Neubiberg
+documentclass: scrbook
+classoption: |
+    fontsize=12pt
+    , paper=a4
+    , twoside=false
+    , DIV12
+    , BCOR=1cm
+    , numbers=enddot
+    , listof=totoc
+    , bibliography=totoc
+    , index=totoc
+    , headings=small
+    , headlines=1.5
+    , final
+geometry: |
+    top=2.5cm
+    , left=2.5cm
+    , right=2.5cm
+    , bottom=4cm
+    , includehead
+    , a4paper
+lang: ngerman
+biblio-title: Literaturverzeichnis
+linkcolor: black
+citecolor: black
+urlcolor: black
+header-includes: 
+    - listingsections
+    - tikz
+    - datatool
+    - glossaries
+glossaries:
+    - ../Additions/Abkuerzungen.tex
+include-before:
+    - ../Additions/Titelseite
+include-after: ../Additions/Anhang
+listGlossary: true
+listFigures: true
+listAlgorithms: false
+listListings: true
+listTables: true
+abstract: Blubbeldiblubd
+thanks: Danke an alle
+---

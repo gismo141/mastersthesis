@@ -1,0 +1,30 @@
+digraph SC_no_Corr {
+	Ausgangspose [shape=rectangle, label="Ausgangspose (AP)", group=g1];
+	Bewegung [shape=none, label="Veränderung durch\nBewegung" , group=g2];
+	Endpose [shape=rectangle, label="Endpose (EP)", group=g3];
+	MontagePose [shape=rectangle, label="Sensorpose zur IMU", group=g2];
+	ICP [shape=doubleoctagon, label="ICP", group=g2];
+	IMU [label="IMU", group=g2];
+	Abgleich [shape=doubleoctagon, label="Abgleich", group=g2];
+
+	Scan_AP [label="Scan an AP", group=g1];
+	Scan_EP [label="Scan an EP", group=g3];
+
+	{
+		rank=same;
+			Ausgangspose; Endpose; Bewegung;
+	}
+
+	Ausgangspose -> Bewegung [style=dotted, arrowhead=none];
+	Bewegung -> Endpose [style=dotted, arrowhead=none];
+	Bewegung -> IMU [style=dotted, arrowhead=none];
+	Ausgangspose -> Scan_AP;
+	Endpose -> Scan_EP;
+
+	Scan_AP -> ICP;
+	Scan_EP -> ICP;
+	ICP -> Abgleich;
+	IMU -> Abgleich;
+	
+	Abgleich -> MontagePose [label=" entspricht"];
+}

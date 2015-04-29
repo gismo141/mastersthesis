@@ -1,0 +1,1308 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Mo",
+				"MontagePose"
+			],
+			[
+				"Mon",
+				"UpdateMontagePose"
+			],
+			[
+				"Upd",
+				"UpdateMontagePose"
+			],
+			[
+				"Scz",
+				"Scan_zu_SK1"
+			],
+			[
+				"Sc",
+				"Scan_AP_SK"
+			],
+			[
+				"ScS",
+				"Scan_AP_in_SK"
+			],
+			[
+				"SK",
+				"SK_zu_TK1"
+			],
+			[
+				"S",
+				"Scan_zu_SK2"
+			],
+			[
+				"SC",
+				"Scan_zu_SK1"
+			],
+			[
+				"TK",
+				"TK_zu_WK2"
+			],
+			[
+				"Sen",
+				"Sensorpose"
+			],
+			[
+				"tes",
+				"test"
+			],
+			[
+				"te",
+				"test2"
+			],
+			[
+				"ifn",
+				"ifnd	ifndef (…)"
+			],
+			[
+				"scan",
+				"scandata2"
+			],
+			[
+				"clou",
+				"cloud_cleaned"
+			],
+			[
+				"Poin",
+				"PointT"
+			],
+			[
+				"PiC",
+				"PointCloudT"
+			],
+			[
+				"Noi",
+				"NOISE"
+			],
+			[
+				"cl",
+				"cloud_icp"
+			],
+			[
+				"cluo",
+				"cloud_in"
+			],
+			[
+				"def",
+				"def	#ifndef … #define … #endif"
+			],
+			[
+				"de",
+				"def	#ifndef … #define … #endif"
+			],
+			[
+				"clouic",
+				"cloud_icp"
+			],
+			[
+				"clo",
+				"cloud_in"
+			],
+			[
+				"nex",
+				"nextWaypoint"
+			],
+			[
+				"bre",
+				"bresenhamAlgorithm"
+			],
+			[
+				"D",
+				"DIAGONAL_SIZE"
+			],
+			[
+				"last",
+				"lastDistance"
+			],
+			[
+				"fea",
+				"featureToTrace"
+			],
+			[
+				"uint",
+				"uint32_t"
+			],
+			[
+				"uin",
+				"uint32_t"
+			],
+			[
+				"P",
+				"PATH"
+			],
+			[
+				"if",
+				"if	If Condition"
+			],
+			[
+				"Spe",
+				"SpeedyMap"
+			],
+			[
+				"del",
+				"delta_y"
+			],
+			[
+				"delt",
+				"delta_y"
+			],
+			[
+				"in",
+				"inc	#include \"…\""
+			],
+			[
+				"y",
+				"y_size"
+			],
+			[
+				"vec",
+				"vector2d"
+			],
+			[
+				"veco",
+				"vector_t"
+			],
+			[
+				"t",
+				"t"
+			],
+			[
+				"frac",
+				"fracture-cl"
+			],
+			[
+				"getA",
+				"getActiveBinaryArchitecture"
+			],
+			[
+				"bS",
+				"binspector"
+			],
+			[
+				"activeBina",
+				"activeBinary"
+			],
+			[
+				"m_",
+				"m_parent"
+			],
+			[
+				"Dis",
+				"Disassembler"
+			],
+			[
+				"hel",
+				"helpWidget"
+			],
+			[
+				"show",
+				"showCentralWidget"
+			],
+			[
+				"p",
+				"parent"
+			],
+			[
+				"code",
+				"codeWidget"
+			],
+			[
+				"bin",
+				"binary"
+			],
+			[
+				"dis",
+				"disassemble"
+			],
+			[
+				"bas",
+				"basicInfo"
+			],
+			[
+				"con",
+				"control"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"binspec",
+				"binspector"
+			],
+			[
+				"vi",
+				"view"
+			],
+			[
+				"QS",
+				"QStylePainter"
+			],
+			[
+				"dec",
+				"decompileIRButton"
+			],
+			[
+				"aL",
+				"addLayout"
+			],
+			[
+				"AL",
+				"addLayout"
+			],
+			[
+				"llv",
+				"llvm_ir"
+			],
+			[
+				"name",
+				"name	Namespace"
+			],
+			[
+				"setFo",
+				"setFormatFor"
+			],
+			[
+				"vis",
+				"visualizerDock"
+			],
+			[
+				"new",
+				"newDockWidget"
+			],
+			[
+				"wi",
+				"widgetsInDock"
+			],
+			[
+				"bi",
+				"binaryDock"
+			],
+			[
+				"nam",
+				"name	Namespace"
+			],
+			[
+				"bins",
+				"binspector"
+			],
+			[
+				"ex",
+				"exec"
+			],
+			[
+				"myF",
+				"myFileDialog"
+			],
+			[
+				"this",
+				"thisParent"
+			],
+			[
+				"setC",
+				"setCodeinSelection"
+			],
+			[
+				"doc",
+				"documentLayout"
+			],
+			[
+				"set",
+				"setupDocumentBrowser"
+			],
+			[
+				"res",
+				"resizeCodes"
+			],
+			[
+				"rem",
+				"removeItem"
+			],
+			[
+				"QState",
+				"QStateMaschine"
+			],
+			[
+				"docA",
+				"documentArea"
+			],
+			[
+				"aDL",
+				"activeDocumentLabel"
+			],
+			[
+				"DO",
+				"documentArea"
+			],
+			[
+				"cod",
+				"codeToRemove"
+			],
+			[
+				"getCo",
+				"getCode"
+			],
+			[
+				"find",
+				"findCodeInList"
+			],
+			[
+				"getCode",
+				"getCodeList"
+			],
+			[
+				"getC",
+				"getCodes"
+			],
+			[
+				"retur",
+				"return"
+			],
+			[
+				"addC",
+				"addNewCode"
+			],
+			[
+				"codeSe",
+				"codeSettings"
+			],
+			[
+				"codeSet",
+				"codeSetup"
+			],
+			[
+				"abort",
+				"abortSetup"
+			],
+			[
+				"clas",
+				"class_	class"
+			],
+			[
+				"cla",
+				"class_	class"
+			],
+			[
+				"acti",
+				"activeDocument"
+			],
+			[
+				"add",
+				"addWidget"
+			],
+			[
+				"main",
+				"mainWidget"
+			],
+			[
+				"cods",
+				"codeSettings"
+			],
+			[
+				"size",
+				"sizeOfWidget"
+			],
+			[
+				"a",
+				"activeDocumentLabel"
+			],
+			[
+				"ac",
+				"activeDocument"
+			],
+			[
+				"Crea",
+				"CreateWindowLayout"
+			],
+			[
+				"eas",
+				"easyQDA"
+			],
+			[
+				"Y",
+				"YELLOW"
+			],
+			[
+				"g",
+				"gz"
+			],
+			[
+				"pi",
+				"picosafe_rootfs"
+			],
+			[
+				"titl",
+				"title{text}	latex-document"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/pandoc.sublime-build",
+					""
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					""
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Init"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Create plist"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Sign Application"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Pack Product"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Test Installation"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Markdown Preview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pandoc.sublime-build",
+					""
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					""
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Init"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Create plist"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Sign Application"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Pack Product"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Test Installation"
+				],
+				[
+					"Packages/User/cpp.sublime-package/qt.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/User/pandoc.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 233.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"makr",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"aca",
+				"Set Syntax: AcademicMarkdown"
+			],
+			[
+				"s",
+				"Set Syntax: Makefile"
+			],
+			[
+				"cit",
+				"Citer: Search"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Build: clean",
+				"Build With: Make - Clean"
+			],
+			[
+				"gitsa",
+				"git: status"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Build: clea",
+				"Build With: Make - Clean"
+			],
+			[
+				"Build: cla",
+				"Build With: Make - Clean"
+			],
+			[
+				"Build: cle",
+				"Build: Cancel"
+			],
+			[
+				"Build: ca",
+				"Build With: Make - Clean"
+			],
+			[
+				"Build: cl",
+				"Build: Cancel"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"over",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"linter",
+				"Snippet: Lambda - Explicit return declaration"
+			],
+			[
+				"lint",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"the",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"col",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"ssmak",
+				"Set Syntax: Makefile"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upgrad",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"astyl",
+				"SublimeAStyleFormatter: Format Current File"
+			],
+			[
+				"Build: c",
+				"Build With: Make - Clean"
+			],
+			[
+				"pa",
+				"Pandoc"
+			],
+			[
+				"pan",
+				"Pandoc"
+			],
+			[
+				"pand",
+				"Pandoc"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"mak",
+				"Set Syntax: Makefile"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Build: in",
+				"Build: Init"
+			],
+			[
+				"Build: ini",
+				"Build: Init"
+			],
+			[
+				"Build: cel",
+				"Build: Clean"
+			],
+			[
+				"pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ss",
+				"Set Syntax: Makefile"
+			],
+			[
+				"ssdo",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"Build: i",
+				"Build: Init"
+			],
+			[
+				"Build: ",
+				"Build: Build"
+			],
+			[
+				"Build: pro",
+				"Build: Pack Product"
+			],
+			[
+				"Build: pr",
+				"Build: Pack Product"
+			],
+			[
+				"Build: cre",
+				"Build: Create plist"
+			],
+			[
+				"Build: say",
+				"Build: Say Name of Application"
+			],
+			[
+				"Build: sAY",
+				"Build: Say Name of Application"
+			],
+			[
+				"Build: b",
+				"Build: Build Product Package"
+			],
+			[
+				"Build: sig",
+				"Build: Sign"
+			],
+			[
+				"bi",
+				"Build: Init"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"sgdb",
+				"Preferences: SublimeGDB Settings – Default"
+			],
+			[
+				"subgdb",
+				"Preferences: SublimeGDB Settings – Default"
+			],
+			[
+				"gdb",
+				"Preferences: SublimeGDB Settings – User"
+			],
+			[
+				"sub",
+				"SublimeGDB: Open Breakpoint View"
+			],
+			[
+				"mark",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"ma",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"Latex",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 610.0
+	},
+	"console":
+	{
+		"height": 576.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit"
+	],
+	"file_history":
+	[
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Masterarbeit.md",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/kalibrierungImSCohneKorr.dot",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/kalibrierungImWC.dot",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/kalibrierungImSC.dot",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/format.yml",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/paper_problemanalyse.md",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Citer.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/AcademicMarkdown.sublime-settings",
+		"/Users/michaelriedel/.pandoc/templates/template.latex",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/test.dot",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Makefile",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/MultiMarkdown.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/C++.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/.build/Masterarbeit.tex",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Additions/Input.tex",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/edgeBetweenEdges.dot",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Additions/Abkuerzungen.tex",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Code/scan_pcl_visualizer.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Code/pcd_write.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Code/goICP.cpp",
+		"/Users/michaelriedel/.gitconfig",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/.gitignore",
+		"/Users/michaelriedel/.gitconfig_global",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/SublimeAStyleFormatter/SublimeAStyleFormatter.sublime-settings",
+		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_3ddt.cpp",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/CTags.sublime-settings",
+		"/usr/include/c++/4.2.1/bits/stringfwd.h",
+		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_goicp.h",
+		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_main.cpp",
+		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_icp3d.hpp",
+		"/Users/michaelriedel/Developer/Go-ICP_V1.3/CMakeLists.txt",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeAStyleFormatter.sublime-settings",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/scan_pcl_visualizer.cpp",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/icp_with_noise.cpp",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcd_write.cpp",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/interactive_icp.cpp",
+		"/Users/michaelriedel/Downloads/test.cpp",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/michaelriedel/.bash_profile",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/statistical_noise_removal.cpp",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcl_icp.cpp",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcl_icp.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Masterarbeit.md",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/C++11.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Markdown Extended.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/CTags/CTags.sublime-settings",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Abkuerzungen.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Aufgabenstellung.md",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/scan_1412242514_981709.txt",
+		"/Users/michaelriedel/Developer/Go-ICP_V1.3/doc/Doxyfile",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Titelseite.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/scan_1412242514_182498.pcd",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/CMakeLists.txt",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/scan_1412242514_182498.txt",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/.build/Masterarbeit.aux",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/.build/Masterarbeit.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Thanks.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Makefile",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/format.yml",
+		"/usr/local/bin/brew-update.sh",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/monkey.ply",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/.gitignore",
+		"/Users/michaelriedel/Developer/mastersthesis/monkey.ply",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Abstract.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Thanks.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/00_Studienarbeit.md",
+		"/Users/michaelriedel/Dropbox/Studium/Bachelor/Bachelorarbeit/Dokument/Bachelorarbeit.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Algorithmische Geometrie/Komplexitäten.md",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Algorithmische Geometrie/Konvexe Hülle.md",
+		"/Users/michaelriedel/brew-update.sh",
+		"/Users/michaelriedel/Developer/mathTest/protokoll_routing_funktioniert.txt",
+		"/Users/michaelriedel/Developer/mathTest/dangerZone.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy.sublime-project",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Plan/Routing.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Sense/Parameters.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/fastMath.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/fastMath.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Plan/Routing.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Plan/SpeedyMapping.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Projekt_Dokumentation.md",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/format.yml",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Additions/Titelseite.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Plan/SpeedyMapping.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/SpeedyMain.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Projekt_Dokumentation.html",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Additions/Anhang.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Sense/SpeedyMain.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/mathTest/sine.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Communication/SDCardManagement.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Act/AutonomousDrive.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Communication/Communication.h",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/SpeedyRoboticDescription.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Doxygen/RobotikSpeedy.Doxyfile",
+		"/Users/michaelriedel/Dropbox/Studium/Master/SoC/Stepper-Motor-Control/Documentation/Doxygen/SOC2014.Doxyfile",
+		"/Users/michaelriedel/Dropbox/Studium/Master/SoC/Stepper-Motor-Control/Documentation/Doxygen/SOC",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Diagrams/test.dot",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Additions/README.md",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Communication/SDCardManagement.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/02_Das_Projekt_LLVM.md",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/26",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/.build/Projekt_Dokumentation.tex",
+		"/Users/michaelriedel/.pandoc/templates/tikz.tex",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/04_binSpector.md",
+		"/Users/michaelriedel/Developer/mathTest/sine.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Act/AutonomousDrive.c",
+		"/Users/michaelriedel/Dropbox/disableHomeButton.mobileconfig",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Sense/Parameters.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Sense/Sensors.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy/Source/SpeedyRoboticDescription.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy/Source/SpeedyMap.c",
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy/Source/SpeedyMain.c",
+		"/Users/michaelriedel/Downloads/GMDSS/Fragenkataloge/40-Fragen-Test/Test.md",
+		"/Users/michaelriedel/Downloads/work/Kapitel_4.md",
+		"/Users/michaelriedel/.mackup.cfg",
+		"//usr/local/lib/python2.7/site-packages/mackup/applications/mackup.cfg",
+		"/Users/michaelriedel/Dropbox/Mackup/.mackup/storage.cfg",
+		"/Users/michaelriedel/Dropbox/Developer/SoC/quartus/IP/signal_generator/signal_generator.vhd",
+		"/Users/michaelriedel/Dropbox/Developer/SoC/quartus/cr_ie_info.json",
+		"/Users/michaelriedel/Dropbox/Developer/SoC/SoC.sublime-project",
+		"/Users/michaelriedel/Dropbox/Developer/SoC/SoC.sublime-workspace",
+		"/Users/michaelriedel/Downloads/rplidar_sdk_v1.4.5/sdk/app/simple_grabber/main.cpp",
+		"/Users/michaelriedel/Dropbox/Developer/lidarTest/main.cpp",
+		"/Users/michaelriedel/Downloads/rplidar_sdk_v1.4.5/sdk/Makefile",
+		"/Users/michaelriedel/Downloads/rplidar_sdk_v1.4.5/sdk/mak_common.inc"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 107.0,
+		"where_history":
+		[
+			"<current file>",
+			"",
+			"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include",
+			"<current file>",
+			"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source,/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include",
+			"/Users/michaelriedel/Dropbox/Studium/Master/Robotik",
+			"",
+			"messageBox",
+			"easyQDA"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem}",
+			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem",
+			"”",
+			"“",
+			"”",
+			"“",
+			" ",
+			"@",
+			"Verortung",
+			"transformiert",
+			".tex",
+			"\\string~/.pandoc/templates/",
+			"head",
+			"header",
+			"\\string",
+			"header",
+			"input",
+			"date",
+			"lmodern",
+			"font",
+			"{\n		rank",
+			"\n		",
+			"shape=rectangle, ",
+			", group=g2",
+			" [group=g3]",
+			" [group=g1]",
+			", group=g3",
+			", group=g1",
+			" [style=dotted, arrowhead=none]",
+			"shape=diamond, width=0.2, height=0.2, label=\"\", ",
+			"\"IMU\"",
+			"=\"\"",
+			"diamond",
+			"[shape=diamond, ",
+			" [color=red]",
+			"[label=\"\"",
+			" [style=dashed]",
+			"g2",
+			"koordinaten",
+			"Endposition",
+			"Ausgangsposition",
+			" [color=\"red\"]",
+			"\"Scan_EP\"",
+			"\"Scan_AP\"",
+			" EP\"",
+			" AP\"",
+			"Scan EP",
+			"Scan AP",
+			"t2",
+			"t1",
+			"Umgebungsscan",
+			"\"Ausgangsposition\"",
+			"\"Endposition\"",
+			"Scan 2 in SC",
+			"\"Bewegung\"",
+			"1",
+			"\"Sensor-Offset\"",
+			"Vergleich",
+			"Initialisierung",
+			"\"Scan 1\"",
+			"\"-\"",
+			"-",
+			"t1",
+			"t2",
+			" (",
+			", Matrix&",
+			"\n{",
+			"Matrix&",
+			"public",
+			"\n{",
+			"pcl::visualization::PointCloudColorHandlerCustom<PointT>",
+			"(int) 255",
+			" (",
+			" //* load the file",
+			"//* load the file",
+			"\n  {",
+			" (",
+			"(int)",
+			" (",
+			"\n    {",
+			"\n      {",
+			"\n    {",
+			"\n  {",
+			"\n{",
+			" (",
+			"	",
+			"seed1",
+			"seed",
+			"seed1",
+			"rand_r(&seed1) % NOISE",
+			"1",
+			"static_cast<int>",
+			"(int)",
+			"PointCloudColorT",
+			" (",
+			"argv",
+			"cout",
+			"viewer",
+			"input",
+			"icp",
+			"scandata1",
+			"scandata",
+			"37811",
+			"entries",
+			"scan",
+			"cloud",
+			";",
+			"e",
+			"entry",
+			"cloud_in",
+			"data",
+			"0",
+			"value",
+			"MAX_valueS_PER_LINE",
+			"token",
+			"TOKEN",
+			"token",
+			"TOKEN",
+			"token",
+			"buf",
+			"n",
+			"N",
+			"n",
+			"   ",
+			"    ",
+			"6DOF",
+			"[^1]",
+			"umgebungs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			";",
+			"6DoF",
+			"dy",
+			"dx",
+			"@return",
+			"erweiterung-der-robotersteuerung---plan-speedymapping",
+			"erweiterung-der-robotersteuerung---plan-speedyMapping",
+			"addCode",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.astyle_error_message":
+	{
+		"height": 116.0
+	},
+	"output.exec":
+	{
+		"height": 185.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 150.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "Masterarbeit.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"kal",
+				"Diagrams/kalibrierungImWC.dot"
+			],
+			[
+				"abk",
+				"Additions/Abkuerzungen.tex"
+			],
+			[
+				"ab",
+				"Additions/Abkuerzungen.tex"
+			],
+			[
+				"abkr",
+				"Additions/Abkuerzungen.tex"
+			],
+			[
+				"",
+				"Additions/Titelseite.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 49.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
