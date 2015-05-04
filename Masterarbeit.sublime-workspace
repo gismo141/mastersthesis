@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"pandoc",
+				"pandoc_build"
+			],
+			[
+				"OU",
+				"OUTFILES"
+			],
+			[
+				"OUTF",
+				"OUTFILE"
+			],
+			[
+				"OUT",
+				"OUTFILE"
+			],
+			[
+				"OUTFI",
+				"OUTFILES"
+			],
+			[
 				"Mo",
 				"MontagePose"
 			],
@@ -444,7 +464,7 @@
 	"buffers":
 	[
 	],
-	"build_system": "",
+	"build_system": "Packages/User/cpp.sublime-package/CMake.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -560,6 +580,26 @@
 			],
 			[
 				"Packages/User/pandoc.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/cpp.sublime-package/CMake.sublime-build",
+					""
+				],
+				[
+					"Packages/User/cpp.sublime-package/CMake.sublime-build",
+					"Init"
+				],
+				[
+					"Packages/User/cpp.sublime-package/CMake.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/User/cpp.sublime-package/CMake.sublime-build",
 				""
 			]
 		]
@@ -873,10 +913,15 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit"
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/cmake"
 	],
 	"file_history":
 	[
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/cmake/Pandoc.cmake",
+		"/Users/michaelriedel/Developer/mpllibs/cmake/Documentation.cmake",
+		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/cmake/Documentation.cmake",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Masterarbeit.md",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/kalibrierungImSCohneKorr.dot",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/kalibrierungImWC.dot",
@@ -1000,11 +1045,7 @@
 		"/Users/michaelriedel/Dropbox/Developer/SoC/quartus/IP/signal_generator/signal_generator.vhd",
 		"/Users/michaelriedel/Dropbox/Developer/SoC/quartus/cr_ie_info.json",
 		"/Users/michaelriedel/Dropbox/Developer/SoC/SoC.sublime-project",
-		"/Users/michaelriedel/Dropbox/Developer/SoC/SoC.sublime-workspace",
-		"/Users/michaelriedel/Downloads/rplidar_sdk_v1.4.5/sdk/app/simple_grabber/main.cpp",
-		"/Users/michaelriedel/Dropbox/Developer/lidarTest/main.cpp",
-		"/Users/michaelriedel/Downloads/rplidar_sdk_v1.4.5/sdk/Makefile",
-		"/Users/michaelriedel/Downloads/rplidar_sdk_v1.4.5/sdk/mak_common.inc"
+		"/Users/michaelriedel/Dropbox/Developer/SoC/SoC.sublime-workspace"
 	],
 	"find":
 	{
@@ -1238,7 +1279,7 @@
 	{
 		"height": 150.0
 	},
-	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"pinned_build_system": "Packages/User/cpp.sublime-package/CMake.sublime-build",
 	"project": "Masterarbeit.sublime-project",
 	"replace":
 	{
@@ -1300,7 +1341,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 276.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

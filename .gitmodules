@@ -1,3 +1,6 @@
 [submodule "laserIMUCalibration"]
 	path = laserIMUCalibration
 	url = git@github.com:gismo141/laserIMUCalibration
+[submodule "cmake/pandocology"]
+	path = cmake/pandocology
+	url = git@github.com:jeetsukumaran/cmake-pandocology

@@ -85,7 +85,7 @@ Dieser Ansatz ist grundlegend als inkrementell zu betrachten. Eventuelle Fehler 
 
 werden gemäß Abbildung \ref{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur} die Sensordaten direkt an den \gls{ICP} übergeben. Bewegt sich der Träger schneller, als der Laserscanner, führt dies bei Scans zu Verzerrungen der realen Objekte. Wird angenommen, dass die Bewegung während der Scans gleichförmig ist, wäre die Verzerrung auf beiden Bildern gleich.
 
-![Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem ohne Bewegungskorrektur\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur}](../Diagrams/kalibrierungImSCohneKorr.pdf)
+![Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem ohne Bewegungskorrektur\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur}](Diagrams/kalibrierungImSCohneKorr.pdf)
 
 \clearpage
 
@@ -97,7 +97,7 @@ Die beiden Laserscans unterscheiden sich auf Grund der vollführten Bewegung von
 
 Im realen System hingegen unterscheiden sich die Pose der \gls{IMU} und die Pose des Laserscanners. Diese Differenz wird durch den Abgleich der \gls{ICP}-Transformation und der \gls{IMU}-Bewegung bestimmt.
 
-![Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_mit_korr}](../Diagrams/kalibrierungImSC.pdf)
+![Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_mit_korr}](Diagrams/kalibrierungImSC.pdf)
 
 \clearpage
 
@@ -105,7 +105,7 @@ Im realen System hingegen unterscheiden sich die Pose der \gls{IMU} und die Pose
 
 Eine Kalibrierung im Weltkoordinatensystem erfordert im Vorhinein mehrere Transformationen bevor ein Abgleich der Sensordaten stattfinden kann. Des Weiteren werden für die Transformationen bereits die \gls{IMU}- und Montagedaten benötigt. Da diese zu Beginn fehlerhaft sind, handelt es sich bei dieser Lösung um einen inkrementellen Ansatz.
 
-![Ablaufdiagramm zur Kalibrierung im Weltkoordinatensystem](../Diagrams/kalibrierungImWC.pdf)
+![Ablaufdiagramm zur Kalibrierung im Weltkoordinatensystem](Diagrams/kalibrierungImWC.pdf)
 
 Das bedeutet, dass:
 

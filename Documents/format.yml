@@ -30,19 +30,20 @@ linkcolor: black
 citecolor: black
 urlcolor: black
 header-includes: 
-    - listingsections
+#    - listingsections
     - tikz
     - datatool
     - glossaries
+    - correctmathsymbols
 glossaries:
-    - ../Additions/Abkuerzungen.tex
+    - Additions/Abkuerzungen.tex
 include-before:
-    - ../Additions/Titelseite
-include-after: ../Additions/Anhang
+    - Additions/Titelseite
+include-after: Additions/Anhang
 listGlossary: true
 listFigures: true
 listAlgorithms: false
-listListings: true
+#listListings: true
 listTables: true
 abstract: Blubbeldiblubd
 thanks: Danke an alle
