@@ -1,9 +1,9 @@
 digraph WC {
 	{	node [group=g1]
-		Scan_AP [label="Scan an AP"];
-		Scan_AP_SK [label="Scan an AP in SK"];
-		Scan_AP_TK [label="Scan an AP in TK"];
-		Scan_AP_WK [label="Scan an AP in WK"];
+		Scan_AP [label="Umgebungsscan"];
+		Scan_AP_SK [label="Sensorkoordinaten"];
+		Scan_AP_TK [label="Trägerkoordinaten"];
+		Scan_AP_WK [label="Weltkoordinaten (rel.)"];
 		node [shape=rectangle]
 		Ausgangspose [label="Ausgangspose (AP)", group=g1];
 		node [shape=diamond, width=0.2, height=0.2, label=""]
@@ -20,10 +20,10 @@ digraph WC {
 	}
 
 	{	node [group=g3]
-		Scan_EP [label="Scan an EP"];
-		Scan_EP_SK [label="Scan an EP in SK"];
-		Scan_EP_TK [label="Scan an EP in TK"];
-		Scan_EP_WK [label="Scan an EP in WK"];
+		Scan_EP [label="Umgebungsscan"];
+		Scan_EP_SK [label="Sensorkoordinaten"];
+		Scan_EP_TK [label="Trägerkoordinaten"];
+		Scan_EP_WK [label="Weltkoordinaten (rel.)"];
 		node [shape=rectangle]
 		Endpose [label="Endpose (EP)", group=g3];
 		node [shape=diamond, width=0.2, height=0.2, label=""]
@@ -42,10 +42,6 @@ digraph WC {
 
 	{	rank=same;
 			SK_zu_TK1; SK_zu_TK2;
-	}
-
-	{	rank=same;
-			TK_zu_WK1; TK_zu_WK2;
 	}
 
 	{	edge [style=dotted, arrowhead=none]
