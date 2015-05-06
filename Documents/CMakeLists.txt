@@ -14,7 +14,23 @@ add_document(
 						--listings
 						--toc
 						--latex-engine-opt=-shell-escape
-						-f markdown+raw_tex+abbreviations
+						-f markdown+raw_tex
+						--chapters
+	PRODUCT_DIRECTORY	.
+)
+
+add_document(
+	Masterarbeit.docx
+	SOURCES				Masterarbeit.md
+	RESOURCE_FILES		${BIBLIOGRAPHY}
+	PANDOC_DIRECTIVES 	-s
+						-N
+						--bibliography=library.bib
+						--biblatex
+						--listings
+						--toc
+						--latex-engine-opt=-shell-escape
+						-f markdown+raw_tex
 						--chapters
 	PRODUCT_DIRECTORY	.
 )

@@ -607,10 +607,30 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 233.0,
-		"last_filter": "",
+		"height": 63.0,
+		"last_filter": "Build: init",
 		"selected_items":
 		[
+			[
+				"Build: init",
+				"Build With: CMake - Init"
+			],
+			[
+				"Build: clea",
+				"Build With: CMake - Clean"
+			],
+			[
+				"Build: in",
+				"Build With: CMake - Init"
+			],
+			[
+				"Build: cle",
+				"Build: Cancel"
+			],
+			[
+				"Build: cm",
+				"Build With: CMake - Init"
+			],
 			[
 				"makr",
 				"MarkdownEditing: Markdown Lint"
@@ -648,16 +668,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"Build: clea",
-				"Build With: Make - Clean"
-			],
-			[
 				"Build: cla",
 				"Build With: Make - Clean"
-			],
-			[
-				"Build: cle",
-				"Build: Cancel"
 			],
 			[
 				"Build: ca",
@@ -770,10 +782,6 @@
 			[
 				"upg",
 				"Package Control: Upgrade Package"
-			],
-			[
-				"Build: in",
-				"Build: Init"
 			],
 			[
 				"Build: ini",
@@ -913,11 +921,18 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit",
-		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/cmake"
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents"
 	],
 	"file_history":
 	[
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/format.yml",
+		"/Users/michaelriedel/.pandoc/templates/template.latex",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/product/Masterarbeit.tex",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/cmake/Pandoc.cmake",
 		"/Users/michaelriedel/Developer/mpllibs/cmake/Documentation.cmake",
@@ -930,7 +945,6 @@
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/paper_problemanalyse.md",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Citer.sublime-settings",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/AcademicMarkdown.sublime-settings",
-		"/Users/michaelriedel/.pandoc/templates/template.latex",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/test.dot",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Makefile",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/MultiMarkdown.sublime-settings",
@@ -1041,11 +1055,7 @@
 		"/Users/michaelriedel/Downloads/work/Kapitel_4.md",
 		"/Users/michaelriedel/.mackup.cfg",
 		"//usr/local/lib/python2.7/site-packages/mackup/applications/mackup.cfg",
-		"/Users/michaelriedel/Dropbox/Mackup/.mackup/storage.cfg",
-		"/Users/michaelriedel/Dropbox/Developer/SoC/quartus/IP/signal_generator/signal_generator.vhd",
-		"/Users/michaelriedel/Dropbox/Developer/SoC/quartus/cr_ie_info.json",
-		"/Users/michaelriedel/Dropbox/Developer/SoC/SoC.sublime-project",
-		"/Users/michaelriedel/Dropbox/Developer/SoC/SoC.sublime-workspace"
+		"/Users/michaelriedel/Dropbox/Mackup/.mackup/storage.cfg"
 	],
 	"find":
 	{
@@ -1072,6 +1082,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n\\clearpage",
+			"\\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur}",
+			"Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem ohne Bewegungskorrektur",
+			"Diagrams",
+			"scrplain",
+			"title",
+			"end{doc}",
+			"begin",
 			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem}",
 			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem",
 			"”",
@@ -1191,15 +1209,7 @@
 			"token",
 			"TOKEN",
 			"token",
-			"buf",
-			"n",
-			"N",
-			"n",
-			"   ",
-			"    ",
-			"6DOF",
-			"[^1]",
-			"umgebungs"
+			"buf"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1269,7 +1279,7 @@
 	},
 	"output.exec":
 	{
-		"height": 185.0
+		"height": 94.0
 	},
 	"output.find_results":
 	{
