@@ -165,7 +165,7 @@ autonomer Hubschrauberflug
 
 ## Aufbau
 
-Welche Sensorprodukte werden wie verwendet (Eigenschaften, Aufflösungen etc.)?
+Welche Sensorprodukte werden wie verwendet (Eigenschaften, Auflösungen etc.)?
 
 ## Ablauf
 
