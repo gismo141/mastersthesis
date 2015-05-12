@@ -7,35 +7,23 @@ digraph SC {
 	IMU [label="IMU", group=g2];
 	Abgleich [shape=doubleoctagon, label="Abgleich", group=g2];
 
-	Scan_AP [label="Umgebungsscan", group=g1];
-	Scan_zu_SK1 [shape=diamond, width=0.2, height=0.2, label="", group=g1];
-	Scan_AP_SK [label="Scan an AP in SK", group=g1];
-	Scan_EP [label="Umgebungsscan", group=g3];
-	Scan_zu_SK2 [shape=diamond, width=0.2, height=0.2, label="", group=g3];
-	Scan_EP_SK [label="Scan an EP in SK", group=g3];
+	Scan_AP [label="Sensorkoordinaten", group=g1];
+	Scan_EP [label="Sensorkoordinaten", group=g3];
 
 	{
 		rank=same;
 			Ausgangspose; Endpose; Bewegung;
 	}
 
-	{
-		rank=same;
-			Scan_zu_SK1; Scan_zu_SK2;
-	}
-
 	Ausgangspose -> Bewegung [style=dotted, arrowhead=none];
 	Bewegung -> Endpose [style=dotted, arrowhead=none];
 	Bewegung -> IMU [style=dotted, arrowhead=none];
-	Ausgangspose -> Scan_AP;
-	Endpose -> Scan_EP;
+	Ausgangspose -> Scan_AP [label=" Umgebungsscan\nausgeführt"];
+	Endpose -> Scan_EP [label=" Umgebungsscan\nausgeführt"];
 
-	Scan_AP -> Scan_zu_SK1 -> Scan_AP_SK -> ICP;
-	Scan_EP -> Scan_zu_SK2 -> Scan_EP_SK -> ICP;
+	Scan_AP -> ICP;
+	Scan_EP -> ICP;
 	ICP -> Abgleich;
-
-	IMU -> Scan_zu_SK1;
-	IMU -> Scan_zu_SK2;
 	IMU -> Abgleich;
 	
 	Abgleich -> MontagePose [label=" entspricht"];

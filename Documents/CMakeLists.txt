@@ -5,7 +5,7 @@ add_document(
 	Masterarbeit.pdf
 	SOURCES				format.yml Masterarbeit.md
 	RESOURCE_FILES		${BIBLIOGRAPHY}
-	RESOURCE_DIRS		../Diagrams ../Images ../Additions
+	RESOURCE_DIRS		../Images ../Additions
 	PANDOC_DIRECTIVES 	-s
 						-N
 						--template=template.latex
@@ -23,7 +23,7 @@ add_document(
 	Masterarbeit.docx
 	SOURCES				Masterarbeit.md
 	RESOURCE_FILES		${BIBLIOGRAPHY}
-	RESOURCE_DIRS		../Diagrams ../Images ../Additions
+	RESOURCE_DIRS		../Images ../Additions
 	PANDOC_DIRECTIVES 	-s
 						-N
 						--bibliography=library.bib

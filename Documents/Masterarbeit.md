@@ -1,20 +1,21 @@
 # Einleitung
 
-Das \gls{DLR} beschäftigt sich am Institut für Flugsystemtechnik mit der Forschung an unbemannten Luftfahrzeugen, die sich in unbekannten Gebieten fortbewegen. Zur erfolgreichen Navigation ist das Erkennen von Hindernissen notwendig. Die Grundlage dafür ist durch verschiedene Algorithmen, wie etwa der Pfadplanung, gegeben.
+In den letzten Jahren hat die allgemeine Akzeptanz im Bereich des autonomen Fahrens stark zugenommen. Namhafte Hersteller wie Audi und BMW bieten bereits hochautomatisierte Fahrzeuge in ihrem Portfolio an, die den Fahrer in alltäglichen Situationen entlasten. Das Fahrzeug kann unter Kontrolle des Fahrers selbstständig einparken oder in Stausituationen die Spur sowie einen einprogrammierten Sicherheitsabstand zu den vorausfahrenden Fahrzeugen einhalten. Im Notfall können Notbremsungen vom Fahrzeug selbst eingeleitet oder dem Fahrer mögliche Ausweichmanöver mitgeteilt und initiiert werden.
 
-Bekannte Pfadplanungsansätze arbeiten mit Hinderniskarten, in denen die Hindernisse mit weiteren Eigenschaften (z.B. der Farbe, der Struktur der Oberfläche, etc.) vermerkt werden. Durch bildgebende Sensoren, wie Laserscanner und Kameras, können detektierte Hindernisse zu diesen Karten hinzugefügt oder die vermerkten Eigenschaften der Hindernisse verbessert werden.
+Im Bereich der Luftfahrt werden Flugvorgänge automatisiert, um die Piloten von monotonen Aufgaben zu entlasten und die Fehleranfälligkeit zu minimieren. Automatisiert bedeutet dabei, dass bestimmte Funktionen vom Piloten aktiv an das System übergeben werden. Das System arbeitet anschließend anhand von festen Programmen die Aufgaben ab. Der Begriff der Autonomie wird in der Wissenschaft unterschiedlich aufgefasst, für diese Arbeit wird ein System als autonom betrachtet, wenn es seine Aktionen selbstständig plant, ausführt und auf Veränderungen der Umwelt entsprechend reagiert. Wird ein Pfad (sogenannten Trajektorie) durch einen Menschen vorgegeben und vom System abgeflogen, so wird dies hochautomatisiert, aber nicht als autonom, betrachtet.
 
-Die Integration von erkannten Hindernissen in bestehende Hinderniskarten erfordert eine Transformation zwischen verschiedenen Koordinatensystemen (Sensor-, Träger- und Weltkoordinatensystemen). Diese Transformationen sind aufgrund der unterschiedlichen Position und Lage der Sensoren und Träger im 3-dimensionalen Raum notwendig, damit die Messungen korrekt verortet werden können.
+Um einem System die Autonomie zu ermöglichen, müssen einige grundlegende Fähigkeiten gegeben sein. Die erste Bedingung an das System ist das selbstständige Planen von Trajektorien. Bekannte Pfadplanungsansätze arbeiten mit Hinderniskarten, in denen die Hindernisse mit verschiedenen Eigenschaften (wie z.B. der Farbe, der Oberflächenstruktur, etc.) vermerkt werden. Durch bildgebende Sensoren, wie Laserscanner und Kameras, können detektierte Hindernisse zu diesen Karten hinzugefügt oder die vermerkten Eigenschaften der Hindernisse verbessert werden.
 
-Die Transformation der Sensordaten in das globale Koordinatensystem oder in andere Sensorkoordinatensysteme enthält oft unbekannte sowie variable Parameter. Dabei ist die genaue Position des Sensors im Gehäuse unbekannt oder die Position des Sensors auf dem Träger ist je nach Experiment unterschiedlich.
+Damit die von den Sensoren detektierten Hindernisse in die Karten eingetragen werden können, müssen die Sensordaten zwischen verschiedenen Koordinatensystemen (Sensor-, Träger- und Weltkoordinatensystemen) transformiert werden. Diese Transformationen sind aufgrund der unterschiedlichen Position und Lage der Sensoren auf dem Träger und des Träger im 3-dimensionalen Raum notwendig. Die Zusammensetzung einer Position und Lage wird als Pose bezeichnet.
 
-Zur Bestimmung der Parameter, wird in dieser Arbeit ein Algorithmus entworfen, umgesetzt und validiert, der die relative extrinsische Transformation zwischen einem Laserscanner sowie einer \gls{IMU} mit \gls{GPS}, ermöglicht.
+Die Transformation der Sensordaten in das globale Koordinatensystem oder in andere Sensorkoordinatensysteme enthält oft unbekannte und variable Parameter. Einerseits ist die genaue Pose des Sensors im Gehäuse unbekannt und andererseits ist die Pose des Sensors auf dem Träger je nach Experiment unterschiedlich.
 
-Ausgangspunkt für den zu entwerfenden Ansatz sind relative Translationen und Rotationen (\gls{6DoF}) des Laserscanners gegenüber der betrachteten Umwelt, die  mittels eines \gls{ICP} Algorithmus aus den Scandaten bestimmt werden. Über einen Abgleich der berechneten Transformation, der gemessenen Bewegung der \gls{IMU} und dem Einsatz einer nicht linearen Optimierung, wie Levenberg-Marquardt, wird anschließend die \gls{6DoF} Transformation zwischen den beiden Komponenten bestimmt.
+In dieser Arbeit wird eine Lösung präsentiert, die die Bestimmung der Montagepose von Laserscannern ermöglicht. Dabei werden Bewegungssensoren anhand einer \gls{IMU} sowie Sensoren zur Positionsbestimmung wie \gls{GPS} verwendet. Es werden verschiedene Varianten zur Kalibrierung auf ihre Genauigkeit und Verwendbarkeit untersucht:
 
-Die Kalibrierung soll unabhängig von einem bekannten Kalibrierobjekt möglich sein. Vielmehr sollen generelle Features der Umwelt verwendet werden um während eines Kalibrierfluges die gesuchten Parameter zu ermitteln.
+a) Die Kalibrierung soll unabhängig von einem bekannten Kalibrierobjekt möglich sein,
+b) generelle Features der Umwelt verwenden, um während eines Kalibrierfluges die gesuchten Parameter zu ermitteln.
 
-Im Kapitel \ref{} werden bestehende Ansätze erläutert und auf die Anwendung auf die Aufgabenstellung untersucht. Im Anschluss wird im Kapitel \ref{} der Ansatz zur Bestimmung der extrinsischen Parameter entworfen und die verwendete Optimierungsfunktion dargestellt. Damit die Parameter bestimmt werden können werden gemäß Kapitel \ref{} die notwendigen Randbedingungen erläutert, die für eine hinreichende Kalibrierung erforderlich sind (Flugprofil). Kapitel \ref{} zeigt die algorithmische Umsetzung des Ansatzes im vorhandenen \gls{DIP}-Framework des Instituts für Flugsystemtechnik. Des Weiteren wird die Umsetzung am praktischen Beispiel validiert.
+Ausgangspunkt für den zu entwerfenden Ansatz sind relative Translationen und Rotationen (\gls{6DoF}) des Laserscanners zur betrachteten Umwelt. Diese werden durch einen \gls{ICP} Algorithmus aus den Scandaten bestimmt. Über den Abgleich der berechneten Transformation, der gemessenen Bewegung der \gls{IMU} und dem Einsatz einer nicht linearen Optimierung, wie Levenberg-Marquardt, wird anschließend die \gls{6DoF} Transformation zwischen den beiden Komponenten bestimmt.
 
 # Grundlagen
 
@@ -50,7 +51,7 @@ Zur Verortung von Sensordaten in der globalen Weltkarte, müssen sie Schritt-fü
 
 ## Sensortechnik
 
-Reflerktivität, Laufzeitmessung, Fehlerbetrachtung
+Reflektivität, Laufzeitmessung, Fehlerbetrachtung
 
 ### Lasersanner
 
@@ -119,43 +120,27 @@ Für die Kalibrierung der Sensoren werden folgende Anforderungen definiert:
 - die Umgebung wird als unveränderlich und starr angenommen,
 - die zu vermessende Bewegung muss größer als die größte Messungenauigkeit des Systems sein. 
 
-### Bild zu Bild
+### Ohne Bewegungskorrektur
 
-Dieser Ansatz ist grundlegend als inkrementell zu betrachten. Eventuelle Fehler müssen durch geeignete Filtermaßnahmen minimiert werden. Des Weiteren muss evaluiert werden, welche Bewegungen für ungeeignet erachtet werden müssen.
+
 
 #### Im Sensorkoordinatensystem
 
-##### Ohne Bewegungskorrektur
-
-werden gemäß Abbildung \ref{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur} die Sensordaten direkt an den \gls{ICP} übergeben. Bewegt sich der Träger schneller, als der Laserscanner, führt dies bei Scans zu Verzerrungen der realen Objekte. Wird angenommen, dass die Bewegung während der Scans gleichförmig ist, wäre die Verzerrung auf beiden Bildern gleich.
-
-![Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem ohne Bewegungskorrektur\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur}](Diagrams/kalibrierungImSCohneKorr.pdf)
-
-##### Mit Bewegungskorrektur
-
-Gemäß Abbildung \ref{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_mit_korr} wird die aktuelle Position und Lage als Ausgangspose vermerkt und ein Laserscan der Umgebung durchgeführt. Anschließend wird eine Bewegung (vorzugsweise gekoppelt aus Translation und Rotation) und eine sogenannte Endpose erreicht. Diese Bewegung wurde durch die \gls{IMU} vermessen und ebenfalls abgespeichert. An der Endpose wird erneut ein Laserscan durchgeführt.
-
-Die beiden Laserscans unterscheiden sich auf Grund der vollführten Bewegung voneinander. Die Transformation vom Laserscan der Endpose zum Laserscan der Ausgangspose wird durch die Verwendung des \gls{ICP}-Algorithmus erhalten.
-
-Im realen System hingegen unterscheiden sich die Pose der \gls{IMU} und die Pose des Laserscanners. Diese Differenz wird durch den Abgleich der \gls{ICP}-Transformation und der \gls{IMU}-Bewegung bestimmt.
-
-![Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_mit_korr}](Diagrams/kalibrierungImSC.pdf)
+![Kalibrierung im Sensorkoordinatensystem\label{fig:kalibrierung_im_sensorkoordinatensystem}](../Diagrams/kalibrierungImSC.pdf)
 
 #### Im Weltkoordinatensystem
 
-Eine Kalibrierung im Weltkoordinatensystem erfordert im Vorhinein mehrere Transformationen bevor ein Abgleich der Sensordaten stattfinden kann. Des Weiteren werden für die Transformationen bereits die \gls{IMU}- und Montagedaten benötigt. Da diese zu Beginn fehlerhaft sind, handelt es sich bei dieser Lösung um einen inkrementellen Ansatz.
+![Kalibrierung im Weltkoordinatensystem\label{fig:kalibrierung_im_weltkoordinatensystem}](../Diagrams/kalibrierungImWC.pdf)
 
-![Ablaufdiagramm zur Kalibrierung im Weltkoordinatensystem\label{fig:ablaufdiagramm_zur_kalibrierung_im_weltkoordinatensystem}](Diagrams/kalibrierungImWC.pdf)
+### Mit Bewegungskorrektur
 
-Das bedeutet, dass:
+#### Im Sensorkoordinatensystem
 
-1. zwei Laserscans im Weltkoordinatensystem verglichen werden,
-2. die verbesserte Montagepose bestimmt wird und
-3. die Berechnung für die verbesserte Montagepose wiederholt wird
+![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}](../Diagrams/kalibrierungImSCmitKorr.pdf)
 
-Dieses Prozedere wird so lange wiederholt, bis keine deutliche Verbesserung in der Montagepose erhalten werden kann. Es ist eindeutig, dass dieses Verfahren im Verhältnis zu den vorherigen deutlich fehlerbehafteter und rechenaufwendiger ist.
+#### Im Weltkoordinatensystem
 
-### Bild zu Welt
+![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_weltkoordinatensystem_mit_korr}](../Diagrams/kalibrierungImWCmitKorr.pdf)
 
 # Validierung
 

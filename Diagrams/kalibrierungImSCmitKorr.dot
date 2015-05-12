@@ -1,4 +1,4 @@
-digraph SC_no_Corr {
+digraph SC {
 	Ausgangspose [shape=rectangle, label="Ausgangspose (AP)", group=g1];
 	Bewegung [shape=none, label="Veränderung durch\nBewegung" , group=g2];
 	Endpose [shape=rectangle, label="Endpose (EP)", group=g3];
@@ -7,12 +7,21 @@ digraph SC_no_Corr {
 	IMU [label="IMU", group=g2];
 	Abgleich [shape=doubleoctagon, label="Abgleich", group=g2];
 
-	Scan_AP [label="Scan an AP", group=g1];
-	Scan_EP [label="Scan an EP", group=g3];
+	Scan_AP [label="Umgebungsscan", group=g1];
+	Scan_zu_SK1 [shape=diamond, label="1a", group=g1];
+	Scan_AP_SK [label="Sensorkoordinaten", group=g1];
+	Scan_EP [label="Umgebungsscan", group=g3];
+	Scan_zu_SK2 [shape=diamond, label="1b", group=g3];
+	Scan_EP_SK [label="Sensorkoordinaten", group=g3];
 
 	{
 		rank=same;
 			Ausgangspose; Endpose; Bewegung;
+	}
+
+	{
+		rank=same;
+			Scan_zu_SK1; Scan_zu_SK2;
 	}
 
 	Ausgangspose -> Bewegung [style=dotted, arrowhead=none];
@@ -21,9 +30,12 @@ digraph SC_no_Corr {
 	Ausgangspose -> Scan_AP;
 	Endpose -> Scan_EP;
 
-	Scan_AP -> ICP;
-	Scan_EP -> ICP;
+	Scan_AP -> Scan_zu_SK1 -> Scan_AP_SK -> ICP;
+	Scan_EP -> Scan_zu_SK2 -> Scan_EP_SK -> ICP;
 	ICP -> Abgleich;
+
+	IMU -> Scan_zu_SK1;
+	IMU -> Scan_zu_SK2;
 	IMU -> Abgleich;
 	
 	Abgleich -> MontagePose [label=" entspricht"];
