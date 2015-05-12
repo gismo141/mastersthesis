@@ -13,7 +13,7 @@ add_document(
 						--biblatex
 						--listings
 						--toc
-						--latex-engine-opt=-shell-escape
+						#--latex-engine-opt=-shell-escape
 						-f markdown+raw_tex
 						--chapters
 	PRODUCT_DIRECTORY	.
@@ -23,13 +23,14 @@ add_document(
 	Masterarbeit.docx
 	SOURCES				Masterarbeit.md
 	RESOURCE_FILES		${BIBLIOGRAPHY}
+	RESOURCE_DIRS		../Diagrams ../Images ../Additions
 	PANDOC_DIRECTIVES 	-s
 						-N
 						--bibliography=library.bib
 						--biblatex
 						--listings
 						--toc
-						--latex-engine-opt=-shell-escape
+						#--latex-engine-opt=-shell-escape
 						-f markdown+raw_tex
 						--chapters
 	PRODUCT_DIRECTORY	.
