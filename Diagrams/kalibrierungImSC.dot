@@ -7,10 +7,10 @@ digraph SC {
 	IMU [label="IMU", group=g2];
 	Abgleich [shape=doubleoctagon, label="Abgleich", group=g2];
 
-	Scan_AP [label="Scan an AP", group=g1];
+	Scan_AP [label="Umgebungsscan", group=g1];
 	Scan_zu_SK1 [shape=diamond, width=0.2, height=0.2, label="", group=g1];
 	Scan_AP_SK [label="Scan an AP in SK", group=g1];
-	Scan_EP [label="Scan an EP", group=g3];
+	Scan_EP [label="Umgebungsscan", group=g3];
 	Scan_zu_SK2 [shape=diamond, width=0.2, height=0.2, label="", group=g3];
 	Scan_EP_SK [label="Scan an EP in SK", group=g3];
 
