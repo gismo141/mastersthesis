@@ -29,21 +29,23 @@ biblio-title: Literaturverzeichnis
 linkcolor: black
 citecolor: black
 urlcolor: black
-header-includes: 
-#    - listingsections
+header-includes:
     - tikz
-    - datatool
     - glossaries
-    - correctmathsymbols
 glossaries:
-    - Additions/Abkuerzungen.tex
+    - Additions/Abkuerzungen
 include-before:
     - Additions/Titelseite
 include-after: Additions/Anhang
+linestretch: "1.5"
 listGlossary: true
+figureTitle: "Abbildung"
+figPrefix: "Abbildung"
 listFigures: true
 listAlgorithms: false
 #listListings: true
+tableTitle: "Tabelle"
+tblPrefix: "Tabelle"
 listTables: true
 abstract: Blubbeldiblubd
 thanks: Danke an alle

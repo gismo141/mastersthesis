@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fil",
+				"files"
+			],
+			[
 				"pandoc",
 				"pandoc_build"
 			],
@@ -607,10 +611,66 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 63.0,
-		"last_filter": "Build: init",
+		"height": 400.0,
+		"last_filter": "insta",
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"updr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"linter",
+				"SublimeLinter: Clear Caches"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lint th",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Build: ini",
+				"Build With: CMake - Init"
+			],
+			[
+				"Build: clean",
+				"Build With: CMake - Clean"
+			],
+			[
+				"graph",
+				"Preview Graphviz Snippet"
+			],
+			[
+				"git",
+				"git: status"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"Build: init",
 				"Build With: CMake - Init"
@@ -656,16 +716,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"Build: clean",
-				"Build With: Make - Clean"
-			],
-			[
 				"gitsa",
 				"git: status"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"Build: cla",
@@ -684,28 +736,12 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"rem",
-				"Package Control: Remove Package"
-			],
-			[
 				"over",
 				"Package Control: Upgrade/Overwrite All Packages"
 			],
 			[
 				"upgr",
 				"Package Control: Upgrade/Overwrite All Packages"
-			],
-			[
-				"lin",
-				"SublimeLinter: Lint This View"
-			],
-			[
-				"linter",
-				"Snippet: Lambda - Explicit return declaration"
-			],
-			[
-				"lint",
-				"SublimeLinter: Enable Linter"
 			],
 			[
 				"prev",
@@ -764,10 +800,6 @@
 				"Markdown Preview: Preview in Browser"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"instal",
 				"Package Control: Install Package"
 			],
@@ -782,10 +814,6 @@
 			[
 				"upg",
 				"Package Control: Upgrade Package"
-			],
-			[
-				"Build: ini",
-				"Build: Init"
 			],
 			[
 				"Build: cel",
@@ -842,10 +870,6 @@
 			[
 				"bi",
 				"Build: Init"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
 			],
 			[
 				"sgdb",
@@ -924,12 +948,38 @@
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents"
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/gui",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui"
 	],
 	"file_history":
 	[
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/main.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter/calibrator.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui/visualizer.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter/calibrator.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/gui/visualizer.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/plot",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/.gitignore",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/Doxyfile",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/html/index.html",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter/noiseTool.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter/noiseTool.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/kalibrierungImSC.dot",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/format.yml",
 		"/Users/michaelriedel/.pandoc/templates/template.latex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/product/Masterarbeit.tex",
@@ -977,7 +1027,6 @@
 		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcd_write.cpp",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/interactive_icp.cpp",
 		"/Users/michaelriedel/Downloads/test.cpp",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
 		"/Users/michaelriedel/.bash_profile",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/statistical_noise_removal.cpp",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcl_icp.cpp",
@@ -1039,23 +1088,7 @@
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Additions/README.md",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Communication/SDCardManagement.c",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/02_Das_Projekt_LLVM.md",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/26",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/.build/Projekt_Dokumentation.tex",
-		"/Users/michaelriedel/.pandoc/templates/tikz.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/04_binSpector.md",
-		"/Users/michaelriedel/Developer/mathTest/sine.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Act/AutonomousDrive.c",
-		"/Users/michaelriedel/Dropbox/disableHomeButton.mobileconfig",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Sense/Parameters.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Sense/Sensors.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy/Source/SpeedyRoboticDescription.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy/Source/SpeedyMap.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy/Source/SpeedyMain.c",
-		"/Users/michaelriedel/Downloads/GMDSS/Fragenkataloge/40-Fragen-Test/Test.md",
-		"/Users/michaelriedel/Downloads/work/Kapitel_4.md",
-		"/Users/michaelriedel/.mackup.cfg",
-		"//usr/local/lib/python2.7/site-packages/mackup/applications/mackup.cfg",
-		"/Users/michaelriedel/Dropbox/Mackup/.mackup/storage.cfg"
+		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/26"
 	],
 	"find":
 	{
@@ -1082,6 +1115,38 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"iterations + milliseconds",
+			"‘",
+			"”",
+			"“",
+			"\n    return (-1);",
+			"argv[1]",
+			"cloud_1",
+			"icp->",
+			"cloud_",
+			"static ",
+			"return dip::filter::calibrator::calibrateLaserPose(&files);",
+			"\n    // gui::visualizer::setupViewerContent(scan1, scan2, transformation, &viewer,\n    //                                     &viewports);\n    // viewer.spinOnce();",
+			"remove",
+			"transformation",
+			"cppcheck",
+			"c_cppcheck",
+			"c_cpplint",
+			"xml",
+			"@CMAKE_CURRENT_SOURCE_DIR@/",
+			"layout",
+			"css",
+			"../Diagrams ",
+			"-o ${CMAKE_CURRENT_SOURCE",
+			"-o ",
+			"-Tpdf ",
+			"\n	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}",
+			"Diagrams",
+			"digraph",
+			"-o ",
+			"${CMAKE_CURRENT_SOURCE_DIR}",
+			"	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}",
+			"-Tpdf ",
 			"\n\\clearpage",
 			"\\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur}",
 			"Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem ohne Bewegungskorrektur",
@@ -1177,39 +1242,7 @@
 			" (",
 			"	",
 			"seed1",
-			"seed",
-			"seed1",
-			"rand_r(&seed1) % NOISE",
-			"1",
-			"static_cast<int>",
-			"(int)",
-			"PointCloudColorT",
-			" (",
-			"argv",
-			"cout",
-			"viewer",
-			"input",
-			"icp",
-			"scandata1",
-			"scandata",
-			"37811",
-			"entries",
-			"scan",
-			"cloud",
-			";",
-			"e",
-			"entry",
-			"cloud_in",
-			"data",
-			"0",
-			"value",
-			"MAX_valueS_PER_LINE",
-			"token",
-			"TOKEN",
-			"token",
-			"TOKEN",
-			"token",
-			"buf"
+			"seed"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1279,7 +1312,7 @@
 	},
 	"output.exec":
 	{
-		"height": 94.0
+		"height": 173.0
 	},
 	"output.find_results":
 	{
