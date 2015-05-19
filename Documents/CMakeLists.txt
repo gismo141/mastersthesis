@@ -1,20 +1,18 @@
-set(TEMPLATE ../../../../../Dropbox/mackup/.pandoc/templates/template.latex)
-set(BIBLIOGRAPHY ../../../../../Dropbox/mackup/bibtex/library.bib)
+set(TEMPLATE template.latex)
+set(BIBLIOGRAPHY library.bib)
+set(BIBPATH ../../../../../bibtex)
 
 add_document(
 	Masterarbeit.pdf
 	SOURCES				format.yml Masterarbeit.md
-	RESOURCE_FILES		${BIBLIOGRAPHY}
-	RESOURCE_DIRS		../Diagrams ../Images ../Additions
-	PANDOC_DIRECTIVES 	-s
-						-N
-						--template=template.latex
-						--bibliography=library.bib
+	RESOURCE_FILES		${BIBPATH}/${BIBLIOGRAPHY}
+	RESOURCE_DIRS		../Images ../Additions
+	PANDOC_DIRECTIVES 	--template=${TEMPLATE}
+						--bibliography=${BIBLIOGRAPHY}
 						--biblatex
+						--filter ~/.cabal/bin/pandoc-crossref
 						--listings
 						--toc
-						#--latex-engine-opt=-shell-escape
-						-f markdown+raw_tex
 						--chapters
 	PRODUCT_DIRECTORY	.
 )
@@ -22,16 +20,13 @@ add_document(
 add_document(
 	Masterarbeit.docx
 	SOURCES				Masterarbeit.md
-	RESOURCE_FILES		${BIBLIOGRAPHY}
-	RESOURCE_DIRS		../Diagrams ../Images ../Additions
-	PANDOC_DIRECTIVES 	-s
-						-N
-						--bibliography=library.bib
-						--biblatex
+	RESOURCE_FILES		${BIBPATH}/${BIBLIOGRAPHY}
+	RESOURCE_DIRS		../Images ../Additions
+	PANDOC_DIRECTIVES 	--filter pandoc-citeproc
+						--filter ~/.cabal/bin/pandoc-crossref
+						--biblio ${BIBLIOGRAPHY}
 						--listings
 						--toc
-						#--latex-engine-opt=-shell-escape
-						-f markdown+raw_tex
 						--chapters
 	PRODUCT_DIRECTORY	.
 )
