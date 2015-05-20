@@ -46,6 +46,7 @@ listAlgorithms: false
 tableTitle: "Tabelle"
 tblPrefix: "Tabelle"
 listTables: true
+numbersections: true
 abstract: Blubbeldiblubd
 thanks: Danke an alle
 ---
