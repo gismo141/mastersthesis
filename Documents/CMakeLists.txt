@@ -3,6 +3,15 @@ set(BIBLIOGRAPHY library.bib)
 set(BIBPATH ../../../../../bibtex)
 
 add_document(
+    Anhang.tex
+    SOURCES             Anhang.md
+    RESOURCE_DIRS       appendix-figs
+    PANDOC_DIRECTIVES   -t latex
+    					--chapters
+    NO_EXPORT_PRODUCT
+    )
+
+add_document(
 	Masterarbeit.pdf
 	SOURCES				format.yml Masterarbeit.md
 	RESOURCE_FILES		${BIBPATH}/${BIBLIOGRAPHY}
@@ -14,19 +23,7 @@ add_document(
 						--listings
 						--toc
 						--chapters
-	PRODUCT_DIRECTORY	.
-)
-
-add_document(
-	Masterarbeit.docx
-	SOURCES				Masterarbeit.md
-	RESOURCE_FILES		${BIBPATH}/${BIBLIOGRAPHY}
-	RESOURCE_DIRS		../Images ../Additions
-	PANDOC_DIRECTIVES 	--filter pandoc-citeproc
-						--filter ~/.cabal/bin/pandoc-crossref
-						--biblio ${BIBLIOGRAPHY}
-						--listings
-						--toc
-						--chapters
+						--include-after-body=Anhang.tex
+    DEPENDS             Anhang.tex
 	PRODUCT_DIRECTORY	.
 )

@@ -36,7 +36,6 @@ glossaries:
     - Additions/Abkuerzungen
 include-before:
     - Additions/Titelseite
-include-after: Additions/Anhang
 linestretch: "1.5"
 listGlossary: true
 figureTitle: "Abbildung"

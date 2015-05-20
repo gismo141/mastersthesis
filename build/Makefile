@@ -154,17 +154,17 @@ kalibrierungImWCmitKorr/fast:
 .PHONY : kalibrierungImWCmitKorr/fast
 
 #=============================================================================
-# Target rules for targets named Masterarbeit.docx
+# Target rules for targets named Anhang.tex
 
 # Build rule for target.
-Masterarbeit.docx: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Masterarbeit.docx
-.PHONY : Masterarbeit.docx
+Anhang.tex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Anhang.tex
+.PHONY : Anhang.tex
 
 # fast build rule for target.
-Masterarbeit.docx/fast:
-	$(MAKE) -f Documents/CMakeFiles/Masterarbeit.docx.dir/build.make Documents/CMakeFiles/Masterarbeit.docx.dir/build
-.PHONY : Masterarbeit.docx/fast
+Anhang.tex/fast:
+	$(MAKE) -f Documents/CMakeFiles/Anhang.tex.dir/build.make Documents/CMakeFiles/Anhang.tex.dir/build
+.PHONY : Anhang.tex/fast
 
 #=============================================================================
 # Target rules for targets named Masterarbeit.pdf
@@ -243,7 +243,7 @@ help:
 	@echo "... kalibrierungImWCmitKorr"
 	@echo "... kalibrierungImSCmitKorr"
 	@echo "... kalibrierungImSC"
-	@echo "... Masterarbeit.docx"
+	@echo "... Anhang.tex"
 	@echo "... Masterarbeit.pdf"
 	@echo "... laserIMUCalibration_noBundle"
 	@echo "... laserIMUCalibration"

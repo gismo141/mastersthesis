@@ -143,21 +143,21 @@ Für die Kalibrierung der Sensoren werden folgende Anforderungen definiert:
 
 [@fig:kalibrierung_im_sensorkoordinatensystem] zeigt die Kalibrierung im Sensorkoordinaten
 
-![Kalibrierung im Sensorkoordinatensystem](../Diagrams/kalibrierungImSC.pdf){#fig:kalibrierung_im_sensorkoordinatensystem}
+![Kalibrierung im Sensorkoordinatensystem](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImSC.pdf){#fig:kalibrierung_im_sensorkoordinatensystem}
 
 #### Mit Bewegungskorrektur
 
-![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}](../Diagrams/kalibrierungImSCmitKorr.pdf)
+![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImSCmitKorr.pdf)
 
 ### Im Weltkoordinatensystem
 
 #### Ohne Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem\label{fig:kalibrierung_im_weltkoordinatensystem}](../Diagrams/kalibrierungImWC.pdf)
+![Kalibrierung im Weltkoordinatensystem\label{fig:kalibrierung_im_weltkoordinatensystem}](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImWC.pdf)
 
 #### Mit Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_weltkoordinatensystem_mit_korr}](../Diagrams/kalibrierungImWCmitKorr.pdf)
+![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_weltkoordinatensystem_mit_korr}](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImWCmitKorr.pdf)
 
 # Validierung
 

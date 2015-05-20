@@ -1,0 +1,63 @@
+\chapter{Anhang}\label{anhang}
+
+\section{Reproduktion der Forschung}\label{reproduktion-der-forschung}
+
+Zur Reproduktion der Forschung wird im Folgenden die
+Entwicklungsumgebung vorgestellt. Für konkrete Information zur
+Installation wird einerseits auf die jeweilige Dokumentation für das
+Programm sowie auf das Github-Repository
+\href{www.github.com/gismo141/laserIMUCalibration}{gismo141:laserIMUCalibration}
+als Begleitmaterial der vorliegenden Arbeit verwiesen.
+
+Die Implementierung der Algorithmen erfolgte einerseits in Python
+(Fast-Implementation) und C++ zur Integration in das vorhandene
+Framework. Dabei wurden die Betriebssysteme Mac OS X 10.10.3 und Windows
+7 verwendet. Es wurde darauf Wert gelegt, Open-Source Software zu
+verwenden.
+
+\subsection{Homebrew}\label{homebrew}
+
+Zur bequemen Installation der benötigten Programme wird für Mac OS X ein
+Paketmanager wie Homebrew oder MacPorts empfohlen. Eventuelle
+Abhängigkeiten können somit während der Installation festgestellt und
+aufgelöst werden. Homebrew trennt dabei die vom Benutzer installierten
+Programme von den system-eigenen wodurch Komplikationen vermindert
+werden.
+
+Homebrew stellt keine Notwendigkeit dar, die benötigte Software kann
+auch von Hand heruntergeladen, kompiliert und installiert werden.
+
+\subsection{Abhängigkeiten}\label{abhuxe4ngigkeiten}
+
+\begin{longtable}[c]{@{}lll@{}}
+\caption{Notwendige Programme zur Erstellung der Arbeit und Ihrer
+Abhängigkeiten}\tabularnewline
+\toprule
+Tool & Version & Verwendung\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Tool & Version & Verwendung\tabularnewline
+\midrule
+\endhead
+Qt5 & 5.4.1 & UI-Design (Oberflächenentwicklung)\tabularnewline
+VTK & 6.2.0 & Visualisierung der Daten und Algorithmen\tabularnewline
+PCL & 1.7.2 & Algorithmen zum Umgang mit Punktwolken (ICP, Outlier
+etc.)\tabularnewline
+CMake & 3.2.2 & einheitliche Build-Umgebung\tabularnewline
+Python & 2.7 & schnelles Algorithmen-Prototyping\tabularnewline
+Pandoc & 1.13.2.1 & Erstellung der Masterarbeit in unterschiedlichen
+Formaten\tabularnewline
+GraphViz & 2.38.0 & Visualisierung der Graphen und
+Algorithmen\tabularnewline
+Doxygen & 1.8.9.1 & Dokumentation des Quellcodes\tabularnewline
+Gnuplot & 5.0.0 & Plotten der gewonnenen Daten\tabularnewline
+\bottomrule
+\end{longtable}
+
+\section{Interessante Links}\label{interessante-links}
+
+\href{http://rawgit.com}{RawGit (Extrahiert Links aus
+Github-Repositories)}
+\href{http://stackoverflow.com/a/11939703/3281871}{PCLVisualizer in Qt
+verwenden} \href{https://github.com/strawlab/python-pcl}{Python-PCL}
