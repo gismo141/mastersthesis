@@ -12,7 +12,7 @@ Zur bequemen Installation der benötigten Programme wird für Mac OS X ein Paket
 
 Homebrew stellt keine Notwendigkeit dar, die benötigte Software kann auch von Hand heruntergeladen, kompiliert und installiert werden.
 
-| Tool     | Version  | Verwendung                                                 |
+| Paket    | Version  | Verwendung                                                 |
 | :---     | :-----   | :----                                                      |
 | Qt5      | 5.4.1    | UI-Design (Oberflächenentwicklung)                         |
 | VTK      | 6.2.0    | Visualisierung der Daten und Algorithmen                   |

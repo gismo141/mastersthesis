@@ -115,6 +115,19 @@ kalibrierungImSC/fast:
 .PHONY : kalibrierungImSC/fast
 
 #=============================================================================
+# Target rules for targets named kalibrierungImSCSVG
+
+# Build rule for target.
+kalibrierungImSCSVG: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kalibrierungImSCSVG
+.PHONY : kalibrierungImSCSVG
+
+# fast build rule for target.
+kalibrierungImSCSVG/fast:
+	$(MAKE) -f Diagrams/CMakeFiles/kalibrierungImSCSVG.dir/build.make Diagrams/CMakeFiles/kalibrierungImSCSVG.dir/build
+.PHONY : kalibrierungImSCSVG/fast
+
+#=============================================================================
 # Target rules for targets named kalibrierungImSCmitKorr
 
 # Build rule for target.
@@ -126,6 +139,19 @@ kalibrierungImSCmitKorr: cmake_check_build_system
 kalibrierungImSCmitKorr/fast:
 	$(MAKE) -f Diagrams/CMakeFiles/kalibrierungImSCmitKorr.dir/build.make Diagrams/CMakeFiles/kalibrierungImSCmitKorr.dir/build
 .PHONY : kalibrierungImSCmitKorr/fast
+
+#=============================================================================
+# Target rules for targets named kalibrierungImSCmitKorrSVG
+
+# Build rule for target.
+kalibrierungImSCmitKorrSVG: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kalibrierungImSCmitKorrSVG
+.PHONY : kalibrierungImSCmitKorrSVG
+
+# fast build rule for target.
+kalibrierungImSCmitKorrSVG/fast:
+	$(MAKE) -f Diagrams/CMakeFiles/kalibrierungImSCmitKorrSVG.dir/build.make Diagrams/CMakeFiles/kalibrierungImSCmitKorrSVG.dir/build
+.PHONY : kalibrierungImSCmitKorrSVG/fast
 
 #=============================================================================
 # Target rules for targets named kalibrierungImWC
@@ -141,6 +167,19 @@ kalibrierungImWC/fast:
 .PHONY : kalibrierungImWC/fast
 
 #=============================================================================
+# Target rules for targets named kalibrierungImWCSVG
+
+# Build rule for target.
+kalibrierungImWCSVG: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kalibrierungImWCSVG
+.PHONY : kalibrierungImWCSVG
+
+# fast build rule for target.
+kalibrierungImWCSVG/fast:
+	$(MAKE) -f Diagrams/CMakeFiles/kalibrierungImWCSVG.dir/build.make Diagrams/CMakeFiles/kalibrierungImWCSVG.dir/build
+.PHONY : kalibrierungImWCSVG/fast
+
+#=============================================================================
 # Target rules for targets named kalibrierungImWCmitKorr
 
 # Build rule for target.
@@ -152,6 +191,19 @@ kalibrierungImWCmitKorr: cmake_check_build_system
 kalibrierungImWCmitKorr/fast:
 	$(MAKE) -f Diagrams/CMakeFiles/kalibrierungImWCmitKorr.dir/build.make Diagrams/CMakeFiles/kalibrierungImWCmitKorr.dir/build
 .PHONY : kalibrierungImWCmitKorr/fast
+
+#=============================================================================
+# Target rules for targets named kalibrierungImWCmitKorrSVG
+
+# Build rule for target.
+kalibrierungImWCmitKorrSVG: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kalibrierungImWCmitKorrSVG
+.PHONY : kalibrierungImWCmitKorrSVG
+
+# fast build rule for target.
+kalibrierungImWCmitKorrSVG/fast:
+	$(MAKE) -f Diagrams/CMakeFiles/kalibrierungImWCmitKorrSVG.dir/build.make Diagrams/CMakeFiles/kalibrierungImWCmitKorrSVG.dir/build
+.PHONY : kalibrierungImWCmitKorrSVG/fast
 
 #=============================================================================
 # Target rules for targets named Anhang.tex
@@ -240,9 +292,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... kalibrierungImWC"
+	@echo "... kalibrierungImSCmitKorrSVG"
 	@echo "... kalibrierungImWCmitKorr"
+	@echo "... kalibrierungImWCSVG"
 	@echo "... kalibrierungImSCmitKorr"
+	@echo "... kalibrierungImSCSVG"
 	@echo "... kalibrierungImSC"
+	@echo "... kalibrierungImWCmitKorrSVG"
 	@echo "... Anhang.tex"
 	@echo "... Masterarbeit.pdf"
 	@echo "... laserIMUCalibration_noBundle"
