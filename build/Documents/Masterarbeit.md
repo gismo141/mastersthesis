@@ -1,26 +1,30 @@
 # Einleitung
 
-In den letzten Jahren hat die allgemeine Akzeptanz im Bereich des autonomen Fahrens stark zugenommen. Namhafte Hersteller wie Audi und BMW bieten bereits hochautomatisierte Fahrzeuge in ihrem Portfolio an, die den Fahrer in alltäglichen Situationen entlasten. Das Fahrzeug kann unter Kontrolle des Fahrers selbstständig einparken oder in Stausituationen die Spur sowie einen einprogrammierten Sicherheitsabstand zu den vorausfahrenden Fahrzeugen einhalten. Im Notfall können Notbremsungen vom Fahrzeug selbst eingeleitet oder dem Fahrer mögliche Ausweichmanöver mitgeteilt und initiiert werden.
+In den letzten Jahren hat das allgemeine Interesse im Bereich des autonomen Fahrens stark zugenommen. Namhafte Hersteller wie Audi und BMW bieten bereits hochautomatisierte Fahrzeuge in ihrem Portfolio an, die den Fahrer in alltäglichen Situationen entlasten. Das Fahrzeug kann unter Kontrolle des Fahrers selbstständig einparken oder in Stau-Situationen die Spur, sowie einen geschwindigkeitsabhängigen Sicherheitsabstand zu den vorausfahrenden Fahrzeugen einhalten. Im Notfall können Notbremsungen vom Fahrzeug selbst eingeleitet oder dem Fahrer mögliche Ausweichmanöver mitgeteilt und initiiert werden.
 
-Im Bereich der Luftfahrt werden Flugvorgänge automatisiert, um die Piloten von monotonen Aufgaben zu entlasten und die Fehleranfälligkeit zu minimieren. Automatisiert bedeutet dabei, dass bestimmte Funktionen vom Piloten aktiv an das System übergeben werden. Das System arbeitet anschließend anhand von festen Programmen die Aufgaben ab. Der Begriff der Autonomie wird in der Wissenschaft unterschiedlich aufgefasst, für diese Arbeit wird ein System als autonom betrachtet, wenn es seine Aktionen selbstständig plant, ausführt und auf Veränderungen der Umwelt entsprechend reagiert. Wird ein 3-dimensionaler Pfad (im Folgenden als Trajektorie bezeichnet) durch einen Menschen vorgegeben und vom System abgeflogen, so wird dies hochautomatisiert, aber nicht als autonom, betrachtet.
+Im Bereich der Luftfahrt werden, ähnlich zum Straßenverkehr, Flugvorgänge automatisiert, um die Piloten von monotonen Aufgaben zu entlasten und die Fehleranfälligkeit zu minimieren. Automatisiert bedeutet dabei, dass bestimmte Funktionen vom Piloten aktiv an das System übergeben werden. Das System arbeitet anschließend anhand von festen Programmen die Aufgaben ab. Anwendungsgebiete sind z.B. das Abfliegen eines Flugplanes im 3-dimensionalen Raum oder ein automatisierter Landeanflug.
+
+Die Abteilung für Flugsysteme beschäftigt sich am \gls{DLR} in Braunschweig mit der Autonomisierung der \gls{UA}. Umweltwahrnehmung, Flugregelung und Flugplanung zählen zu den hauptsächlichen Forschungsbereichen. Das Ziel ist der sichere und autonome Flugbetrieb.
+
+Der Begriff der Autonomie wird in der Wissenschaft unterschiedlich aufgefasst. Für diese Arbeit wird ein System als autonom betrachtet, wenn es seine Aktionen selbstständig plant, ausführt und auf Veränderungen der Umwelt entsprechend reagiert. Wird ein 3-dimensionaler Pfad (im Folgenden als Trajektorie bezeichnet) durch einen Menschen vorgegeben und vom System abgeflogen, so wird dies als hochautomatisiert, aber nicht als autonom, bezeichnet. Plant das System seinen Flugpfad auf Grund seiner Messwerte und Missionsvorgaben ohne Vorgabe eines Menschen, so wird dies als autonom bezeichnet.
 
 Um einem System die Autonomie zu ermöglichen, müssen einige grundlegende Fähigkeiten gegeben sein. Die erste Bedingung an das System ist das selbstständige Planen von Trajektorien. Bekannte Pfadplanungsansätze arbeiten mit Hinderniskarten, in denen die Hindernisse mit verschiedenen Eigenschaften (wie z.B. der Farbe, der Oberflächenstruktur, etc.) vermerkt werden. Durch bildgebende Sensoren, wie Laserscanner und Kameras, können detektierte Hindernisse zu diesen Karten hinzugefügt oder die vermerkten Eigenschaften der Hindernisse verbessert werden.
 
-Damit die von den Sensoren detektierten Hindernisse in die Karten eingetragen werden können, müssen die Sensordaten zwischen verschiedenen Koordinatensystemen (Sensor-, Träger- und Weltkoordinatensystemen) transformiert werden. Diese Transformationen sind aufgrund der unterschiedlichen Position und Lage der Sensoren auf dem Träger und des Träger im 3-dimensionalen Raum notwendig. Die Zusammensetzung einer Position und Lage wird als Pose bezeichnet.
+Damit die von den Sensoren detektierten Hindernisse in die Karten eingetragen werden können, müssen die Sensordaten in ein gemeinsames Koordinatensystem überführt werden. Dafür werden die Sensordaten schrittweise zwischen verschiedenen Koordinatensystemen (Sensor-, Träger- und Weltkoordinatensystemen) transformiert.
 
-Die Transformation der Sensordaten in das globale Koordinatensystem oder in andere Sensorkoordinatensysteme enthält oft unbekannte und variable Parameter. Einerseits ist die genaue Pose des Sensors im Gehäuse unbekannt und andererseits ist die Pose des Sensors auf dem Träger je nach Experiment unterschiedlich.
+Die Transformation der Sensordaten in das globale Koordinatensystem oder in andere Sensorkoordinatensysteme enthält oft unbekannte und variable Parameter. Einerseits ist die genaue Pose des Sensors im Gehäuse unbekannt und andererseits ist die Pose des Sensors auf dem Träger je nach Experiment unterschiedlich und auf Grund platzsparender Konstruktion nur sehr schwer messbar. Dadurch werden die Sensordaten an falsche Posen transformiert und die Sensor-Fusion erschwert. 
 
-In dieser Arbeit wird eine Lösung präsentiert, die die Bestimmung der Montagepose von \gls{LiDAR}-Sensoren ermöglicht. Dabei werden Bewegungssensoren anhand einer \gls{IMU} sowie Sensoren zur Positionsbestimmung wie \gls{GPS} verwendet.
+Die in dieser Arbeit präsentierte Lösung ermöglicht die automatische Bestimmung der Montagepose von \gls{LiDAR}-Sensoren relativ zur \gls{IMU}.
 
-Ausgangspunkt für den zu entwerfenden Ansatz sind relative Translationen und Rotationen (\gls{6DoF}) des Laserscanners zur betrachteten Umwelt. Diese werden mit Hilfe des \gls{ICP} Algorithmus aus den Scandaten bestimmt. Über den Abgleich der berechneten Transformation, der gemessenen Bewegung der \gls{IMU} und dem Einsatz einer nicht linearen Optimierung, wie Levenberg-Marquardt, wird anschließend die \gls{6DoF} Transformation zwischen den beiden Sensoren bestimmt.
+Ausgangspunkt für den zu entwerfenden Ansatz sind relative Translationen und Rotationen (\gls{6DoF}) des \gls{LiDAR} zur betrachteten Umwelt. Diese werden mit Hilfe des \gls{ICP} Algorithmus aus sukzessiven Aufnahmen bestimmt. Über den Abgleich der berechneten Transformation, der gemessenen Bewegung der \gls{IMU} und dem Einsatz einer nicht linearen Optimierung, wird anschließend die \gls{6DoF} Transformation zwischen den beiden Sensoren bestimmt.
 
 # Grundlagen
 
-In diesem Kapitel werden die geometrischen, mathematischen und algorithmischen Grundlagen erläutert.
-
 ## Die verwendeten Koordinatensysteme
 
-Autonomes Fliegen erfordert verschiedene Sensoren, die die Umwelt des autonomen Systems vermessen. Bevor diese Daten in einen Zusammenhang gebracht werden können, müssen sie auf eine gemeinsame Datenbasis fusioniert werden. Bei Bildgebenden Sensoren entsteht eine Art Bild, entweder aus Pixeln in einem Array oder durch radiale Entfernungen. Diese Daten befinden sich in einem sogenannten Sensorkoordinatensystem und sind abhängig von der Realisierung des Sensors.
+Autonome Systeme benötigen verschiedene Sensoren, um ihre Umwelt zu vermessen, zu klassifizieren und Entscheidungen autonom treffen zu können. Bevor die verschiedenen Daten in einen Zusammenhang gebracht werden können, müssen sie auf einer gemeinsamen Datenbasis fusioniert werden. 
+
+Jedes aufgenommene Datum eines Sensors befindet sich in einem Sensorkoordinatensystem. Der Ursprung des Koordinatensystems ist der Nullpunkt des Sensors. Jeder Sensorhersteller definiert den Nullpunkt unterschiedlich.  
 
 Viele Sensoren sind direkt auf dem autonomen System (z.B. bei dem Projekt \gls{ARTIS}) montiert und unterscheiden sich, in Bezug auf das Trägerkoordinatensystem, zusätzlich in Positionen und Lage zueinander.
 
@@ -52,7 +56,7 @@ Reflektivität, Laufzeitmessung, Fehlerbetrachtung
 
 ### Lasersanner
 
-Laserscanner liefern die Messwerte im Allgemeinen in Polarkoordinaten. Dabei handelt es sich um Messwerte und Winkelangaben und sind abhängig vom Aufbau des Laserscanners.
+Laserscanner liefern die Messwerte im Allgemeinen in Polarkoordinaten. Dabei handelt es sich um Messwerte und Winkelangaben und sind abhängig vom Aufbau des \gls{LiDAR}.
 
 - Verzerrung durch Bewegung
 - Distanzfehler (+/- 10 cm)
@@ -75,7 +79,7 @@ Fehlerquellen:
 
 #### Beschleunigungssensoren
 
-Bewegungssensoren messen die Beschleunigungen in einer bestimmten Richtung und liefern meist skalare Messwerte. Werden mehrere Beschleunigungssensoren zusammengefasst, entsteht ein Sensorsystem, eine sogenannte \gls{IMU}. Dieses Sensorsystem liefert je nach Ausführung mehrdimensionale Messwerte, die die Position und Lage zur befindlichen Welt beschreiben.
+Bewegungssensoren messen die Beschleunigungen in einer bestimmten Richtung und liefern meist skalare Messwerte. Werden mehrere Beschleunigungssensoren zusammengefasst, entsteht ein Sensorsystem, eine sogenannte \gls{IMU}. Dieses Sensorsystem liefert je nach Ausführung mehrdimensionale Messwerte zur Bestimmung von Position und Lage in der  befindlichen Welt beschreiben.
 
 Fehlerquellen:
 

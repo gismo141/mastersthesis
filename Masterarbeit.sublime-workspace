@@ -612,12 +612,92 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "insta",
+		"last_filter": "prev",
 		"selected_items":
 		[
 			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Build: ini",
+				"Build With: CMake - Init"
+			],
+			[
+				"Build: clean",
+				"Build With: CMake - Clean"
+			],
+			[
+				"writing",
+				"Toggle Writing Style"
+			],
+			[
+				"di",
+				"Dictionaries: Set Language"
+			],
+			[
+				"push",
+				"git: push"
+			],
+			[
+				"com",
+				"git: commit"
+			],
+			[
+				"git",
+				"git: status"
+			],
+			[
+				"dic",
+				"Dictionaries: Set Language"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previw",
+				"Preview Graphviz Snippet"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Build: cle",
+				"Build: Cancel"
+			],
+			[
+				"Build: clea",
+				"Build With: CMake - Clean"
+			],
+			[
+				"ipy",
+				"Open IPython Notebook"
+			],
+			[
+				"Build: lcea",
+				"Build With: CMake - Clean"
+			],
+			[
+				"citer",
+				"Citer: Show All"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current syntax"
 			],
 			[
 				"remov",
@@ -652,40 +732,16 @@
 				"Package Control: Install Package"
 			],
 			[
-				"Build: ini",
-				"Build With: CMake - Init"
-			],
-			[
-				"Build: clean",
-				"Build With: CMake - Clean"
-			],
-			[
 				"graph",
 				"Preview Graphviz Snippet"
-			],
-			[
-				"git",
-				"git: status"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"Build: init",
 				"Build With: CMake - Init"
 			],
 			[
-				"Build: clea",
-				"Build With: CMake - Clean"
-			],
-			[
 				"Build: in",
 				"Build With: CMake - Init"
-			],
-			[
-				"Build: cle",
-				"Build: Cancel"
 			],
 			[
 				"Build: cm",
@@ -709,10 +765,6 @@
 			],
 			[
 				"i",
-				"Package Control: Install Package"
-			],
-			[
-				"ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -742,10 +794,6 @@
 			[
 				"upgr",
 				"Package Control: Upgrade/Overwrite All Packages"
-			],
-			[
-				"prev",
-				"Markdown Preview: Preview in Browser"
 			],
 			[
 				"ctags",
@@ -818,10 +866,6 @@
 			[
 				"Build: cel",
 				"Build: Clean"
-			],
-			[
-				"pre",
-				"Markdown Preview: Preview in Browser"
 			],
 			[
 				"ss",
@@ -946,11 +990,7 @@
 	"expanded_folders":
 	[
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/gui",
@@ -961,27 +1001,50 @@
 	],
 	"file_history":
 	[
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object/dataTypes.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/README.md",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeWritingStyle.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/SublimeWritingStyle/SublimeWritingStyle.sublime-settings",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Anhang.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/kalibrierungImSC.dot",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/format.yml",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
+		"/Users/michaelriedel/.pandoc/templates/template.latex",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/.gitignore",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research - Laser-IMU-Calibration.ipynb",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research.tex",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research.",
+		"/Users/michaelriedel/.gitignore_global",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/main.cpp",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter/calibrator.h",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui/visualizer.cpp",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter/calibrator.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter/calibrator.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/3d.plot",
+		"/Users/michaelriedel/Developer/raspberry-pi-sd-installer-os-x/install",
+		"/Users/michaelriedel/Developer/rpi-buildroot/Makefile",
+		"/Users/michaelriedel/.ssh/known_hosts",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Titelseite.tex",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Citer.sublime-settings",
+		"/Users/michaelriedel/Developer/test/template.latex",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/bibformat.tex",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Masterarbeit.tex",
+		"/Users/michaelriedel/Developer/test/test.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Abkuerzungen.tex",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/AcademicMarkdown.sublime-settings",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/Doxyfile",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui/visualizer.cpp",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/gui/visualizer.h",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/plot",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/CMakeLists.txt",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/.gitignore",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/Doxyfile",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/html/index.html",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter/noiseTool.cpp",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter/noiseTool.h",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/kalibrierungImSC.dot",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/CMakeLists.txt",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/format.yml",
-		"/Users/michaelriedel/.pandoc/templates/template.latex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/product/Masterarbeit.tex",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/cmake/Pandoc.cmake",
@@ -993,12 +1056,9 @@
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/kalibrierungImSC.dot",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/format.yml",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/paper_problemanalyse.md",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Citer.sublime-settings",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/AcademicMarkdown.sublime-settings",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Diagrams/test.dot",
 		"/Users/michaelriedel/Documents/Ausbildung /UniBw/Masterarbeit/Makefile",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/MultiMarkdown.sublime-settings",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/C++.sublime-settings",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
@@ -1068,27 +1128,7 @@
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/fastMath.c",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Plan/Routing.c",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Plan/SpeedyMapping.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Projekt_Dokumentation.md",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/format.yml",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Additions/Titelseite.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Plan/SpeedyMapping.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/SpeedyMain.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Projekt_Dokumentation.html",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Additions/Anhang.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Sense/SpeedyMain.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/mathTest/sine.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Communication/SDCardManagement.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Act/AutonomousDrive.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Communication/Communication.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/SpeedyRoboticDescription.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Doxygen/RobotikSpeedy.Doxyfile",
-		"/Users/michaelriedel/Dropbox/Studium/Master/SoC/Stepper-Motor-Control/Documentation/Doxygen/SOC2014.Doxyfile",
-		"/Users/michaelriedel/Dropbox/Studium/Master/SoC/Stepper-Motor-Control/Documentation/Doxygen/SOC",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Diagrams/test.dot",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Additions/README.md",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Communication/SDCardManagement.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/02_Das_Projekt_LLVM.md",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/26"
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Projekt_Dokumentation.md"
 	],
 	"find":
 	{
@@ -1115,6 +1155,85 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"libgcrypt11",
+			"db",
+			"db-util",
+			"libdb",
+			"libdb5.3-dev",
+			"libavahi-client-dev",
+			"avahi-daemon",
+			"avahi",
+			"\n",
+			" (used by netatalk(8))",
+			"Pose",
+			"Laserscanners",
+			"**",
+			"https://rawgit.com/gismo141/mastersthesis/master/build",
+			"pdf",
+			"-Tpdf",
+			"pdf",
+			"-Tpdf",
+			"add_custom_target(kalibrierungImSC ALL\n	COMMAND /usr/local/bin/dot -Tpdf ${CMAKE_CURRENT_SOURCE_DIR}/kalibrierungImSC.dot -o ${CMAKE_CURRENT_BINARY_DIR}/kalibrierungImSC.pdf\n)\n\nadd_custom_target(kalibrierungImSCmitKorr ALL\n	COMMAND /usr/local/bin/dot -Tpdf ${CMAKE_CURRENT_SOURCE_DIR}/kalibrierungImSCmitKorr.dot -o ${CMAKE_CURRENT_BINARY_DIR}/kalibrierungImSCmitKorr.pdf\n)\n\nadd_custom_target(kalibrierungImWC ALL\n	COMMAND /usr/local/bin/dot -Tpdf ${CMAKE_CURRENT_SOURCE_DIR}/kalibrierungImWC.dot -o ${CMAKE_CURRENT_BINARY_DIR}/kalibrierungImWC.pdf\n)\n\nadd_custom_target(kalibrierungImWCmitKorr ALL\n	COMMAND /usr/local/bin/dot -Tpdf ${CMAKE_CURRENT_SOURCE_DIR}/kalibrierungImWCmitKorr.dot -o ${CMAKE_CURRENT_BINARY_DIR}/kalibrierungImWCmitKorr.pdf\n)",
+			"svg",
+			"pdf",
+			"shell",
+			"bash",
+			"LiDAR",
+			"appendices",
+			"../Diagrams/",
+			"plotICPErrors",
+			"milliseconds",
+			"timestamp",
+			"below",
+			"belo",
+			"base",
+			"   | ",
+			"eader-includes",
+			"lof",
+			"lot",
+			"hypersetup",
+			"Abbildung",
+			"lot",
+			"lof",
+			"@fig",
+			"\\ref{",
+			"listofalgorithms",
+			"listoflistings",
+			"\\ifthenelse{\\equal{$list",
+			"\\ifthenelse",
+			"}{}",
+			"table",
+			"tab",
+			"line",
+			"pandoc-cross",
+			"top",
+			"plain",
+			"caption",
+			"float",
+			"tab",
+			"urlstyle",
+			"hypersetup",
+			"ca",
+			"caption",
+			"tab",
+			"tabl",
+			"long",
+			"figures",
+			"Figures",
+			"figures",
+			"longtable",
+			"table",
+			"cap",
+			"table",
+			"float",
+			" ",
+			"y-",
+			"Y-",
+			"X-",
+			"phi",
+			"psi",
+			"Laserscannern",
+			"input",
 			"iterations + milliseconds",
 			"‘",
 			"”",
@@ -1163,86 +1282,7 @@
 			"“",
 			" ",
 			"@",
-			"Verortung",
-			"transformiert",
-			".tex",
-			"\\string~/.pandoc/templates/",
-			"head",
-			"header",
-			"\\string",
-			"header",
-			"input",
-			"date",
-			"lmodern",
-			"font",
-			"{\n		rank",
-			"\n		",
-			"shape=rectangle, ",
-			", group=g2",
-			" [group=g3]",
-			" [group=g1]",
-			", group=g3",
-			", group=g1",
-			" [style=dotted, arrowhead=none]",
-			"shape=diamond, width=0.2, height=0.2, label=\"\", ",
-			"\"IMU\"",
-			"=\"\"",
-			"diamond",
-			"[shape=diamond, ",
-			" [color=red]",
-			"[label=\"\"",
-			" [style=dashed]",
-			"g2",
-			"koordinaten",
-			"Endposition",
-			"Ausgangsposition",
-			" [color=\"red\"]",
-			"\"Scan_EP\"",
-			"\"Scan_AP\"",
-			" EP\"",
-			" AP\"",
-			"Scan EP",
-			"Scan AP",
-			"t2",
-			"t1",
-			"Umgebungsscan",
-			"\"Ausgangsposition\"",
-			"\"Endposition\"",
-			"Scan 2 in SC",
-			"\"Bewegung\"",
-			"1",
-			"\"Sensor-Offset\"",
-			"Vergleich",
-			"Initialisierung",
-			"\"Scan 1\"",
-			"\"-\"",
-			"-",
-			"t1",
-			"t2",
-			" (",
-			", Matrix&",
-			"\n{",
-			"Matrix&",
-			"public",
-			"\n{",
-			"pcl::visualization::PointCloudColorHandlerCustom<PointT>",
-			"(int) 255",
-			" (",
-			" //* load the file",
-			"//* load the file",
-			"\n  {",
-			" (",
-			"(int)",
-			" (",
-			"\n    {",
-			"\n      {",
-			"\n    {",
-			"\n  {",
-			"\n{",
-			" (",
-			"	",
-			"seed1",
-			"seed"
+			"Verortung"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1277,7 +1317,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -1312,7 +1352,7 @@
 	},
 	"output.exec":
 	{
-		"height": 173.0
+		"height": 127.0
 	},
 	"output.find_results":
 	{
@@ -1336,12 +1376,16 @@
 		"selected_items":
 		[
 			[
-				"kal",
-				"Diagrams/kalibrierungImWC.dot"
+				"tit",
+				"Additions/Titelseite.tex"
 			],
 			[
 				"abk",
 				"Additions/Abkuerzungen.tex"
+			],
+			[
+				"kal",
+				"Diagrams/kalibrierungImWC.dot"
 			],
 			[
 				"ab",
@@ -1384,7 +1428,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 276.0,
+	"side_bar_width": 293.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
