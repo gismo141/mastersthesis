@@ -468,7 +468,7 @@
 	"buffers":
 	[
 	],
-	"build_system": "Packages/User/cpp.sublime-package/CMake.sublime-build",
+	"build_system": "Packages/User/cmake.sublime-package/CMake.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -590,6 +590,26 @@
 		[
 			[
 				[
+					"Packages/User/cmake.sublime-package/CMake.sublime-build",
+					""
+				],
+				[
+					"Packages/User/cmake.sublime-package/CMake.sublime-build",
+					"Init"
+				],
+				[
+					"Packages/User/cmake.sublime-package/CMake.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/User/cmake.sublime-package/CMake.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
 					"Packages/User/cpp.sublime-package/CMake.sublime-build",
 					""
 				],
@@ -611,14 +631,10 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "prev",
+		"height": 63.0,
+		"last_filter": "Build: ini",
 		"selected_items":
 		[
-			[
-				"prev",
-				"Markdown Preview: Preview in Browser"
-			],
 			[
 				"Build: ini",
 				"Build With: CMake - Init"
@@ -626,6 +642,14 @@
 			[
 				"Build: clean",
 				"Build With: CMake - Clean"
+			],
+			[
+				"Build: cle",
+				"Build: Cancel"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
 			],
 			[
 				"writing",
@@ -674,10 +698,6 @@
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"Build: cle",
-				"Build: Cancel"
 			],
 			[
 				"Build: clea",
@@ -989,18 +1009,16 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/gui",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui"
+		"/Users/michaelriedel/Developer/mastersthesis",
+		"/Users/michaelriedel/Developer/mastersthesis/build",
+		"/Users/michaelriedel/Developer/mastersthesis/Diagrams",
+		"/Users/michaelriedel/Developer/mastersthesis/Documents"
 	],
 	"file_history":
 	[
+		"/Users/michaelriedel/Developer/mastersthesis/Documents/CMakeLists.txt",
+		"/Users/michaelriedel/Developer/mastersthesis/Research.tex",
+		"/Users/michaelriedel/Downloads/Untitled.tex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object/dataTypes.h",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -1125,10 +1143,7 @@
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Plan/Routing.h",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Sense/Parameters.h",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/fastMath.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/fastMath.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Plan/Routing.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/Plan/SpeedyMapping.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Documentation/Projekt_Dokumentation.md"
+		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/fastMath.c"
 	],
 	"find":
 	{
@@ -1155,6 +1170,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
+			"sudo ",
+			" ",
+			" ",
+			"sudo ",
 			"libgcrypt11",
 			"db",
 			"db-util",
@@ -1277,12 +1297,7 @@
 			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem}",
 			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem",
 			"”",
-			"“",
-			"”",
-			"“",
-			" ",
-			"@",
-			"Verortung"
+			"“"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1362,7 +1377,7 @@
 	{
 		"height": 150.0
 	},
-	"pinned_build_system": "Packages/User/cpp.sublime-package/CMake.sublime-build",
+	"pinned_build_system": "Packages/User/cmake.sublime-package/CMake.sublime-build",
 	"project": "Masterarbeit.sublime-project",
 	"replace":
 	{

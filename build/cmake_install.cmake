@@ -1,4 +1,4 @@
-# Install script for directory: /Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit
+# Install script for directory: /Users/michaelriedel/Developer/mastersthesis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,9 +29,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Diagrams/cmake_install.cmake")
-  include("/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Documents/cmake_install.cmake")
-  include("/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/laserIMUCalibration/cmake_install.cmake")
+  include("/Users/michaelriedel/Developer/mastersthesis/build/Diagrams/cmake_install.cmake")
+  include("/Users/michaelriedel/Developer/mastersthesis/build/Documents/cmake_install.cmake")
+  include("/Users/michaelriedel/Developer/mastersthesis/build/laserIMUCalibration/cmake_install.cmake")
 
 endif()
 
@@ -43,5 +43,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/michaelriedel/Developer/mastersthesis/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

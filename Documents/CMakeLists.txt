@@ -1,6 +1,6 @@
-set(TEMPLATE template.latex)
+set(TEMPLATE t_thesis.tex)
 set(BIBLIOGRAPHY library.bib)
-set(BIBPATH ../../../../../bibtex)
+set(BIBPATH ../../../bibtex)
 
 add_document(
     Anhang.tex
@@ -19,7 +19,7 @@ add_document(
 	PANDOC_DIRECTIVES 	--template=${TEMPLATE}
 						--bibliography=${BIBLIOGRAPHY}
 						--biblatex
-						--filter ~/.cabal/bin/pandoc-crossref
+						#--filter ~/Library/Haskell/bin/pandoc-crossref
 						--listings
 						--toc
 						--chapters

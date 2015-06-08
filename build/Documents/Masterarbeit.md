@@ -1,6 +1,6 @@
 # Einleitung
 
-In den letzten Jahren hat das allgemeine Interesse im Bereich des autonomen Fahrens stark zugenommen. Namhafte Hersteller wie Audi und BMW bieten bereits hochautomatisierte Fahrzeuge in ihrem Portfolio an, die den Fahrer in alltäglichen Situationen entlasten. Das Fahrzeug kann unter Kontrolle des Fahrers selbstständig einparken oder in Stau-Situationen die Spur, sowie einen geschwindigkeitsabhängigen Sicherheitsabstand zu den vorausfahrenden Fahrzeugen einhalten. Im Notfall können Notbremsungen vom Fahrzeug selbst eingeleitet oder dem Fahrer mögliche Ausweichmanöver mitgeteilt und initiiert werden.
+In den letzten Jahren hat das allgemeine Interesse am Autonomen Fahren stark zugenommen. Namhafte Hersteller wie zum Beispiel Audi und BMW bieten bereits hochautomatisierte Fahrzeuge in ihrem Portfolio an, die den Fahrer in alltäglichen Situationen entlasten. Das Fahrzeug kann unter Kontrolle des Fahrers selbstständig einparken oder in Stau-Situationen die Spur, sowie einen geschwindigkeitsabhängigen Sicherheitsabstand zu den vorausfahrenden Fahrzeugen einhalten. Im Notfall können Notbremsungen vom Fahrzeug selbst eingeleitet oder dem Fahrer mögliche Ausweichmanöver mitgeteilt und initiiert werden.
 
 Im Bereich der Luftfahrt werden, ähnlich zum Straßenverkehr, Flugvorgänge automatisiert, um die Piloten von monotonen Aufgaben zu entlasten und die Fehleranfälligkeit zu minimieren. Automatisiert bedeutet dabei, dass bestimmte Funktionen vom Piloten aktiv an das System übergeben werden. Das System arbeitet anschließend anhand von festen Programmen die Aufgaben ab. Anwendungsgebiete sind z.B. das Abfliegen eines Flugplanes im 3-dimensionalen Raum oder ein automatisierter Landeanflug.
 
@@ -12,7 +12,7 @@ Um einem System die Autonomie zu ermöglichen, müssen einige grundlegende Fähi
 
 Damit die von den Sensoren detektierten Hindernisse in die Karten eingetragen werden können, müssen die Sensordaten in ein gemeinsames Koordinatensystem überführt werden. Dafür werden die Sensordaten schrittweise zwischen verschiedenen Koordinatensystemen (Sensor-, Träger- und Weltkoordinatensystemen) transformiert.
 
-Die Transformation der Sensordaten in das globale Koordinatensystem oder in andere Sensorkoordinatensysteme enthält oft unbekannte und variable Parameter. Einerseits ist die genaue Pose des Sensors im Gehäuse unbekannt und andererseits ist die Pose des Sensors auf dem Träger je nach Experiment unterschiedlich und auf Grund platzsparender Konstruktion nur sehr schwer messbar. Dadurch werden die Sensordaten an falsche Posen transformiert und die Sensor-Fusion erschwert. 
+Die Transformation der Sensordaten in das globale Koordinatensystem oder in andere Sensorkoordinatensysteme enthält oft unbekannte und variable Parameter. Einerseits ist die genaue Position und Lage (Pose) des Sensors im Gehäuse unbekannt. Andererseits ist die Pose des Sensors auf dem Träger je nach Experiment unterschiedlich und auf Grund platzsparender Konstruktion nur sehr schwer messbar. Dadurch werden die Sensordaten falsch transformiert und die Sensor-Fusion erschwert.
 
 Die in dieser Arbeit präsentierte Lösung ermöglicht die automatische Bestimmung der Montagepose von \gls{LiDAR}-Sensoren relativ zur \gls{IMU}.
 
@@ -22,11 +22,11 @@ Ausgangspunkt für den zu entwerfenden Ansatz sind relative Translationen und Ro
 
 ## Die verwendeten Koordinatensysteme
 
-Autonome Systeme benötigen verschiedene Sensoren, um ihre Umwelt zu vermessen, zu klassifizieren und Entscheidungen autonom treffen zu können. Bevor die verschiedenen Daten in einen Zusammenhang gebracht werden können, müssen sie auf einer gemeinsamen Datenbasis fusioniert werden. 
+Autonome Systeme benötigen verschiedene Sensoren, um ihre Umwelt zu vermessen, zu klassifizieren und Entscheidungen zu treffen. Bevor die verschiedenen Daten in einen Zusammenhang gebracht werden können, müssen sie auf eine gemeinsame Datenbasis fusioniert werden.
 
-Jedes aufgenommene Datum eines Sensors befindet sich in einem Sensorkoordinatensystem. Der Ursprung des Koordinatensystems ist der Nullpunkt des Sensors. Jeder Sensorhersteller definiert den Nullpunkt unterschiedlich.  
+Jedes aufgenommene Datum eines Sensors befindet sich in einem Sensorkoordinatensystem. Der Ursprung des Koordinatensystems ist der Nullpunkt des Sensors, den jeder Sensorhersteller unterschiedlich definiert.  
 
-Viele Sensoren sind direkt auf dem autonomen System (z.B. bei dem Projekt \gls{ARTIS}) montiert und unterscheiden sich, in Bezug auf das Trägerkoordinatensystem, zusätzlich in Positionen und Lage zueinander.
+Die verschiedenen Sensoren sind auf einem Sensorträger befestigt. Der Ursprung des sogenannten Trägerkoordinatensystems ist meist der Ursprung der \gls{IMU}. Alle Sensorposen werden relativ zur \gls{IMU}-Pose ausgerichtet.
 
 Des Weiteren befindet sich das autonome System zu einem bestimmten Zeitpunkt in einer Lage und einer Position in seiner Umgebung. Dessen Bezugsort ist der Ursprung für das Weltkoordinatensystem.
 
