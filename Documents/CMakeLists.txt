@@ -1,6 +1,5 @@
 set(TEMPLATE t_thesis.tex)
-set(BIBLIOGRAPHY library.bib)
-set(BIBPATH ../../../bibtex)
+set(BIBLIOGRAPHY ../../../../../bibtex/library.bib)
 
 add_document(
     Anhang.tex
@@ -14,12 +13,11 @@ add_document(
 add_document(
 	Masterarbeit.pdf
 	SOURCES				format.yml Masterarbeit.md
-	RESOURCE_FILES		${BIBPATH}/${BIBLIOGRAPHY}
+	RESOURCE_FILES		${BIBLIOGRAPHY}
 	RESOURCE_DIRS		../Images ../Additions
 	PANDOC_DIRECTIVES 	--template=${TEMPLATE}
 						--bibliography=${BIBLIOGRAPHY}
 						--biblatex
-						#--filter ~/Library/Haskell/bin/pandoc-crossref
 						--listings
 						--toc
 						--chapters

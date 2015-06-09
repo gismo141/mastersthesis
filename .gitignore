@@ -1,6 +1,7 @@
 build/laserIMUCalibration
 build/CMakeFiles
-build/Documents/CMakeFiles
+build/Documents
 
 cmake_install.cmake
 CMakeCache.txt
+Makefile

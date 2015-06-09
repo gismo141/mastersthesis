@@ -44,6 +44,8 @@ Der Ursprung und die Ausrichtung der Koordinatenachsen hängt von der Anwendung 
 
 Das Weltkoordinatensystem bezieht sich auf die Umgebung, in der sich der Träger bewegt. Es dient der Kartografie durch die Sensorwerte und zur Navigation des Trägers. Der Koordinatenursprung kann durch die \gls{GPS}-Position eindeutig festgelegt werden.
 
+![Schematische Darstellung des Weltkoordinatensystems\label{fig:schematische_darstellung_des_weltkoordinatensystems}](Images/world_coordinatesystem.png)
+
 ## Koordinatentransformation nach Denavit-Hartenberg
 
 - Bezug auf Eigen
@@ -122,7 +124,7 @@ Eine automatisierte Kalibrierung zwischen \gls{LiDAR} und \gls{IMU} Sensoren erm
 
 ## Problemanalyse
 
-Die Bestimmung von Lage und Position im 3-dimensionalen Raum bezeichnet die Bestimmung von 6 Freiheitsgraden (\gls{6DoF}). Die 6 Freiheitsgrade werden in 3 translatorische und 3 rotatorische Freiheitsgrade unterteilt. Die translatorischen Freiheitsgrade bestimmen die Position in $X$-, $Y$-, und $Z$-Achse in einem Weltkoordinatensystem. Die rotatorischen Freiheitsgrade bestimmen die Lage an dieser Position in Bezug zur Erdoberfläche. Gemäß [@tbl:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300] werden die 3 Eulerschen Winkeln $\Phi$ (Phi), $\Theta$ (Theta) und $\Psi$ (Psi) verwendet.
+Die Bestimmung von Lage und Position im 3-dimensionalen Raum bezeichnet die Bestimmung von 6 Freiheitsgraden (\gls{6DoF}). Die 6 Freiheitsgrade werden in 3 translatorische und 3 rotatorische Freiheitsgrade unterteilt. Die translatorischen Freiheitsgrade bestimmen die Position in $X$-, $Y$-, und $Z$-Achse in einem Weltkoordinatensystem. Die rotatorischen Freiheitsgrade bestimmen die Lage an dieser Position in Bezug zur Erdoberfläche. Gemäß \ref{tbl:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300} werden die 3 Eulerschen Winkeln $\Phi$ (Phi), $\Theta$ (Theta) und $\Psi$ (Psi) verwendet.
 
 | Winkel   | Bezeichnung | Rotationsachse |
 | :-----   | :-------    | :-----:        |
@@ -130,9 +132,7 @@ Die Bestimmung von Lage und Position im 3-dimensionalen Raum bezeichnet die Best
 | $\Theta$ | Nickwinkel  | $Y$            |
 | $\Psi$   | Rollwinkel  | $X$            |
 
-Table: Bezeichnung der Winkel gemäß DIN 9300 / ISO 1151-2:1985 {#tbl:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300}
-
-
+Table: Bezeichnung der Winkel gemäß DIN 9300 / ISO 1151-2:1985\label{tab:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300}
 
 ## Möglichkeiten zur Kalibrierung
 
@@ -145,39 +145,80 @@ Für die Kalibrierung der Sensoren werden folgende Anforderungen definiert:
 
 #### Ohne Bewegungskorrektur
 
-[@fig:kalibrierung_im_sensorkoordinatensystem] zeigt die Kalibrierung im Sensorkoordinaten
+\ref{fig:kalibrierung_im_sensorkoordinatensystem} zeigt die Kalibrierung im Sensorkoordinaten
 
-![Kalibrierung im Sensorkoordinatensystem](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImSC.pdf){#fig:kalibrierung_im_sensorkoordinatensystem}
+![Kalibrierung im Sensorkoordinatensystem\label{fig:kalibrierung_im_sensorkoordinatensystem}](Images/kalibrierungImSC.pdf)
 
 #### Mit Bewegungskorrektur
 
-![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImSCmitKorr.pdf){#fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}
+![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}](Images/kalibrierungImSCmitKorr.pdf)
 
 ### Im Weltkoordinatensystem
 
 #### Ohne Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImWC.pdf){#fig:kalibrierung_im_weltkoordinatensystem}
+![Kalibrierung im Weltkoordinatensystem\label{fig:kalibrierung_im_weltkoordinatensystem}](Images/kalibrierungImWC.pdf)
 
 #### Mit Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur](https://rawgit.com/gismo141/mastersthesis/master/build/Diagrams/kalibrierungImWCmitKorr.pdf){#fig:kalibrierung_im_weltkoordinatensystem_mit_korr}
+![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_weltkoordinatensystem_mit_korr}](Images/kalibrierungImWCmitKorr.pdf)
 
 # Validierung
+
+Zur Validierung der Kalibrier-Lösung wurden zwei Experimente durchgeführt. Das erste Experiment dient zur Bestimmung des "Common Ground" anhand eines konstruierten und vermessenen Aufbaus. Das zweite Experiment dient der Erprobung an einem Flugversuch eines automatisierten Hubschraubers. Im Folgenden werden beide Experimente bezüglich ihres Aufbaus, des Ablaufs und den jeweiligen Resultaten erläutert.
 
 ## Einsatzgebiet
 
 autonomer Hubschrauberflug
 
-## Aufbau
+## Versuch - "Common Ground"
 
-Welche Sensorprodukte werden wie verwendet (Eigenschaften, Auflösungen etc.)?
+### Aufbau
 
-## Ablauf
+**Welche Sensorprodukte werden wie verwendet (Eigenschaften, Auflösungen etc.)?**
+
+Mit dem Experiment wird die Genauigkeit der Kalibrierungslösung bestimmt. Der Aufbau ist minimal und besteht rein aus den zur Kalibrierung benötigten Geräten.
+
+#### Der Laserscanner
+
+Als Laserscanner kommt der Velodyne HDL-32e (im Folgenden als Velodyne bezeichnet) zum Einsatz. Der Sichtbereich des Velodyne beträgt 360° um seine Y-Achse. Durch 32 vertikal angeordnete Laserquellen beträgt der Sichtbereich in der ZX-Ebene zwischen +10° und -30°. Der Messbereich liegt bei 1m bis 100m mit einer Standardabweichung von +/- 2cm bei 25m. Die horizontale Auflösung ist abhängig von der, vom Anwender eingestellten, Bildrate (Framerate). Die Framerate kann vom Benutzer zwischen 5Hz und 20Hz gewählt werden. Für diesen Versuch wurde die Framerate auf 10Hz eingestellt.
+
+![Schematische Darstellung des Velodyne HDL-32e mit Koordinatensystem\label{fig:schematische_darstellung_des_velodyne_hdl-32e_mit_koordinatensystem}](Images/velodyne.png)
+
+Der Laserscanner misst den Rotationswinkel $\Theta$, die Distanz zum Objekt, dem Intensitätswert des jeweiligen Hits (ein Hit bezeichnet den Auftreffpunkt des Laserstrahls auf einem Objekt) und einem Zeitstempel. Die aufgenommenen Sensordaten werden per \gls{UDP} an den Flugrechner weitergeleitet und dort in Sensorkorrdinaten transformiert.
+
+#### Die inertiale Messeinheit
+
+Als inertiale Messeinheit kommt die iMar \gls{IMU} iTraceRT-F400-Q zum Einsatz. Die \gls{IMU} bietet eine "Deep-Coupled" Sensorumgebung aus \gls{INS} und \gls{GNSS} 
+
+|       | Antenne 1 | Antenne 2 |
+| :-:   | :----:    | :------:  |
+| **X** | 44.5      | -114.0    |
+| **Y** | 11.0      | 0.0       |
+| **Z** | -2.0      | -3.0      |
+
+### Ablauf
 
 Während eines Experimentalfluges werden in regelmäßigen Abständen Bewegungs- und Laserdaten aufgenommen. Die Abstände richten sich nach den jeweiligen Fähigkeiten der Sensoren.
 
-## Ergebnisse
+```Bash
+./dip/bin/obdip-release-linux64-g++
+./artis/bin/itracert-logger-release-linux64-g++
+```
+
+### Ergebnisse
+
+## Versuch - "In-Flight"
+
+### Aufbau
+
+Welche Sensorprodukte werden wie verwendet (Eigenschaften, Auflösungen etc.)?
+
+### Ablauf
+
+Während eines Experimentalfluges werden in regelmäßigen Abständen Bewegungs- und Laserdaten aufgenommen. Die Abstände richten sich nach den jeweiligen Fähigkeiten der Sensoren.
+
+### Ergebnisse
 
 ## Gesamtresultat
 
