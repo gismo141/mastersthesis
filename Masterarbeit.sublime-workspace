@@ -640,12 +640,24 @@
 				"Build With: CMake - Init"
 			],
 			[
+				"Build: clea",
+				"Build With: CMake - Clean"
+			],
+			[
 				"Build: clean",
 				"Build With: CMake - Clean"
 			],
 			[
 				"Build: cle",
 				"Build: Cancel"
+			],
+			[
+				"dic",
+				"Dictionaries: Set Language"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
 				"prev",
@@ -672,10 +684,6 @@
 				"git: status"
 			],
 			[
-				"dic",
-				"Dictionaries: Set Language"
-			],
-			[
 				"ins",
 				"Package Control: Install Package"
 			],
@@ -698,10 +706,6 @@
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"Build: clea",
-				"Build With: CMake - Clean"
 			],
 			[
 				"ipy",
@@ -868,10 +872,6 @@
 				"Markdown Preview: Preview in Browser"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"make",
 				"Set Syntax: Makefile"
 			],
@@ -1009,18 +1009,28 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/michaelriedel/Developer/mastersthesis",
-		"/Users/michaelriedel/Developer/mastersthesis/build",
-		"/Users/michaelriedel/Developer/mastersthesis/Diagrams",
-		"/Users/michaelriedel/Developer/mastersthesis/Documents"
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents"
 	],
 	"file_history":
 	[
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/format.yml",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/.gitignore",
+		"/Users/michaelriedel/Downloads/CM_test_Pydot_ranksame",
+		"/Users/michaelriedel/.pandoc/templates/t_thesis.tex",
+		"/var/folders/1_/8v2pl25n1cb6j5rqgwklx_2h0000gn/T/com.apple.iChat/Messages/Transfers/usepackage.tex",
+		"/var/folders/1_/8v2pl25n1cb6j5rqgwklx_2h0000gn/T/com.apple.iChat/Messages/Transfers/Bachelorarbeit_Streck.pdf",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Images/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Abkuerzungen.tex",
 		"/Users/michaelriedel/Developer/mastersthesis/Documents/CMakeLists.txt",
 		"/Users/michaelriedel/Developer/mastersthesis/Research.tex",
 		"/Users/michaelriedel/Downloads/Untitled.tex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object/dataTypes.h",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/README.md",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeWritingStyle.sublime-settings",
@@ -1028,10 +1038,7 @@
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Anhang.md",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/kalibrierungImSC.dot",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/CMakeLists.txt",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/format.yml",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
 		"/Users/michaelriedel/.pandoc/templates/template.latex",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/.gitignore",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research - Laser-IMU-Calibration.ipynb",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research.tex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research.",
@@ -1049,7 +1056,6 @@
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/bibformat.tex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Masterarbeit.tex",
 		"/Users/michaelriedel/Developer/test/test.md",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Abkuerzungen.tex",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/AcademicMarkdown.sublime-settings",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/Doxyfile",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui/visualizer.cpp",
@@ -1137,13 +1143,7 @@
 		"/Users/michaelriedel/Dropbox/Studium/Master/Algorithmische Geometrie/Komplexitäten.md",
 		"/Users/michaelriedel/Dropbox/Studium/Master/Algorithmische Geometrie/Konvexe Hülle.md",
 		"/Users/michaelriedel/brew-update.sh",
-		"/Users/michaelriedel/Developer/mathTest/protokoll_routing_funktioniert.txt",
-		"/Users/michaelriedel/Developer/mathTest/dangerZone.c",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Speedy.sublime-project",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Plan/Routing.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/Sense/Parameters.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/include/fastMath.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Robotik/Source/fastMath.c"
+		"/Users/michaelriedel/Developer/mathTest/protokoll_routing_funktioniert.txt"
 	],
 	"find":
 	{
@@ -1170,6 +1170,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"{width: \"500px\"}",
+			" {width: \"500px\"})",
+			"https://rawgit.com/gismo141/mastersthesis/master/",
+			"/build/Images",
+			"skip",
+			"parski",
+			" ",
+			"Diagrams",
 			" ",
 			"sudo ",
 			" ",
@@ -1289,15 +1297,7 @@
 			"\n\\clearpage",
 			"\\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur}",
 			"Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem ohne Bewegungskorrektur",
-			"Diagrams",
-			"scrplain",
-			"title",
-			"end{doc}",
-			"begin",
-			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem}",
-			"ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem",
-			"”",
-			"“"
+			"Diagrams"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1390,6 +1390,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ak",
+				"Additions/Abkuerzungen.tex"
+			],
 			[
 				"tit",
 				"Additions/Titelseite.tex"
