@@ -44,7 +44,7 @@ Der Ursprung und die Ausrichtung der Koordinatenachsen hängt von der Anwendung 
 
 Das Weltkoordinatensystem bezieht sich auf die Umgebung, in der sich der Träger bewegt. Es dient der Kartografie durch die Sensorwerte und zur Navigation des Trägers. Der Koordinatenursprung kann durch die \gls{GPS}-Position eindeutig festgelegt werden.
 
-![Schematische Darstellung des Weltkoordinatensystems\label{fig:schematische_darstellung_des_weltkoordinatensystems}](Images/world_coordinatesystem.png)
+![Schematische Darstellung des Weltkoordinatensystems\label{fig:schematische_darstellung_des_weltkoordinatensystems}](https://rawgit.com/gismo141/mastersthesis/master/Images/world_coordinatesystem.png){width: "500px"}
 
 ## Koordinatentransformation nach Denavit-Hartenberg
 
@@ -147,21 +147,21 @@ Für die Kalibrierung der Sensoren werden folgende Anforderungen definiert:
 
 \ref{fig:kalibrierung_im_sensorkoordinatensystem} zeigt die Kalibrierung im Sensorkoordinaten
 
-![Kalibrierung im Sensorkoordinatensystem\label{fig:kalibrierung_im_sensorkoordinatensystem}](Images/kalibrierungImSC.pdf)
+![Kalibrierung im Sensorkoordinatensystem\label{fig:kalibrierung_im_sensorkoordinatensystem}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImSC.pdf)
 
 #### Mit Bewegungskorrektur
 
-![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}](Images/kalibrierungImSCmitKorr.pdf)
+![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImSCmitKorr.pdf)
 
 ### Im Weltkoordinatensystem
 
 #### Ohne Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem\label{fig:kalibrierung_im_weltkoordinatensystem}](Images/kalibrierungImWC.pdf)
+![Kalibrierung im Weltkoordinatensystem\label{fig:kalibrierung_im_weltkoordinatensystem}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImWC.pdf)
 
 #### Mit Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_weltkoordinatensystem_mit_korr}](Images/kalibrierungImWCmitKorr.pdf)
+![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_weltkoordinatensystem_mit_korr}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImWCmitKorr.pdf)
 
 # Validierung
 
@@ -183,13 +183,15 @@ Mit dem Experiment wird die Genauigkeit der Kalibrierungslösung bestimmt. Der A
 
 Als Laserscanner kommt der Velodyne HDL-32e (im Folgenden als Velodyne bezeichnet) zum Einsatz. Der Sichtbereich des Velodyne beträgt 360° um seine Y-Achse. Durch 32 vertikal angeordnete Laserquellen beträgt der Sichtbereich in der ZX-Ebene zwischen +10° und -30°. Der Messbereich liegt bei 1m bis 100m mit einer Standardabweichung von +/- 2cm bei 25m. Die horizontale Auflösung ist abhängig von der, vom Anwender eingestellten, Bildrate (Framerate). Die Framerate kann vom Benutzer zwischen 5Hz und 20Hz gewählt werden. Für diesen Versuch wurde die Framerate auf 10Hz eingestellt.
 
-![Schematische Darstellung des Velodyne HDL-32e mit Koordinatensystem\label{fig:schematische_darstellung_des_velodyne_hdl-32e_mit_koordinatensystem}](Images/velodyne.png)
+![Schematische Darstellung des Velodyne HDL-32e mit Koordinatensystem\label{fig:schematische_darstellung_des_velodyne_hdl-32e_mit_koordinatensystem}](https://rawgit.com/gismo141/mastersthesis/master/Images/velodyne.png){width: "500px"}
 
-Der Laserscanner misst den Rotationswinkel $\Theta$, die Distanz zum Objekt, dem Intensitätswert des jeweiligen Hits (ein Hit bezeichnet den Auftreffpunkt des Laserstrahls auf einem Objekt) und einem Zeitstempel. Die aufgenommenen Sensordaten werden per \gls{UDP} an den Flugrechner weitergeleitet und dort in Sensorkorrdinaten transformiert.
+Der Laserscanner misst den Rotationswinkel $\Theta$, die Distanz zum Objekt, dem Intensitätswert des jeweiligen Hits (ein Hit bezeichnet den Auftreffpunkt des Laserstrahls auf einem Objekt) und einem Zeitstempel. Die aufgenommenen Sensordaten werden per \gls{UDP} an den Flugrechner weitergeleitet und dort in Sensorkoordinaten transformiert.
 
 #### Die inertiale Messeinheit
 
 Als inertiale Messeinheit kommt die iMar \gls{IMU} iTraceRT-F400-Q zum Einsatz. Die \gls{IMU} bietet eine "Deep-Coupled" Sensorumgebung aus \gls{INS} und \gls{GNSS} 
+
+Table: Montageabstände zwischen den GPS-Antennen und der IMU\label{tab:montageabstaende_zwischen_den_gps-antennen_und_der_imu}
 
 |       | Antenne 1 | Antenne 2 |
 | :-:   | :----:    | :------:  |

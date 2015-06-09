@@ -13,8 +13,8 @@ add_document(
 add_document(
 	Masterarbeit.pdf
 	SOURCES				format.yml Masterarbeit.md
-	RESOURCE_FILES		${BIBLIOGRAPHY}
-	RESOURCE_DIRS		../Images ../Additions
+	RESOURCE_FILES		../Images/athene.pdf ${BIBLIOGRAPHY}
+	RESOURCE_DIRS		../Additions
 	PANDOC_DIRECTIVES 	--template=${TEMPLATE}
 						--bibliography=${BIBLIOGRAPHY}
 						--biblatex
