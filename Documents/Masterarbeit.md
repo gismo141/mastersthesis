@@ -1,130 +1,94 @@
 # Einleitung
 
-In den letzten Jahren hat das allgemeine Interesse am Autonomen Fahren stark zugenommen. Namhafte Hersteller wie zum Beispiel Audi und BMW bieten bereits hochautomatisierte Fahrzeuge in ihrem Portfolio an, die den Fahrer in alltäglichen Situationen entlasten. Das Fahrzeug kann unter Kontrolle des Fahrers selbstständig einparken oder in Stau-Situationen die Spur, sowie einen geschwindigkeitsabhängigen Sicherheitsabstand zu den vorausfahrenden Fahrzeugen einhalten. Im Notfall können Notbremsungen vom Fahrzeug selbst eingeleitet oder dem Fahrer mögliche Ausweichmanöver mitgeteilt und initiiert werden.
+\begin{chapquote}{Doc Brown, \textit{Back to the Future}}
+``Roads? Where we're going, we don't need roads.''
+\end{chapquote}
 
-Im Bereich der Luftfahrt werden, ähnlich zum Straßenverkehr, Flugvorgänge automatisiert, um die Piloten von monotonen Aufgaben zu entlasten und die Fehleranfälligkeit zu minimieren. Automatisiert bedeutet dabei, dass bestimmte Funktionen vom Piloten aktiv an das System übergeben werden. Das System arbeitet anschließend anhand von festen Programmen die Aufgaben ab. Anwendungsgebiete sind z.B. das Abfliegen eines Flugplanes im 3-dimensionalen Raum oder ein automatisierter Landeanflug.
+Möchten wir uns heute in ein anderes Land begeben, beruflich oder privat verreisen, stehen uns verschiedene Transportmittel zur Verfügung. Sie unterscheiden sich in der verfügbaren Kapazität, Reichweite, Geschwindigkeit und den Reisekosten. Autos, Züge und Busse sind ideal, um zügig und ohne Umschweife mehrere 100 km zurückzulegen. Das Schiff bietet den schwergewichtigen und zeitlosen Transport, durch Kreuzfahrten wird es zur Attraktion selbst. Das Flugzeug bietet den schnellen Transport über mehrere 1000 km.
 
-Die Abteilung für Flugsysteme beschäftigt sich am \gls{DLR} in Braunschweig mit der Autonomisierung der \gls{UA}. Umweltwahrnehmung, Flugregelung und Flugplanung zählen zu den hauptsächlichen Forschungsbereichen. Das Ziel ist der sichere und autonome Flugbetrieb.
+Die Raumfahrt ist bisher das kostspieligste Transportmittel und für den zivilen Personentransport unerschlossen. Private Firmen wie SpaceX sind auf dem Vormarsch, die Raumfahrt rentabel zu machen. Durch Experimente zur Rückgewinnung von Antriebssystemen sollen die Kosten gesenkt und die rasche Wiederverwendung ermöglicht werden.
 
-Der Begriff der Autonomie wird in der Wissenschaft unterschiedlich aufgefasst. Für diese Arbeit wird ein System als autonom betrachtet, wenn es seine Aktionen selbstständig plant, ausführt und auf Veränderungen der Umwelt entsprechend reagiert. Wird ein 3-dimensionaler Pfad (im Folgenden als Trajektorie bezeichnet) durch einen Menschen vorgegeben und vom System abgeflogen, so wird dies als hochautomatisiert, aber nicht als autonom, bezeichnet. Plant das System seinen Flugpfad auf Grund seiner Messwerte und Missionsvorgaben ohne Vorgabe eines Menschen, so wird dies als autonom bezeichnet.
+Nach @Lipps2005 ist die Zahl der zurückgelegten Kilometer aller Transportwege in Westdeutschland von 1982 bis 2002 um 40% gestiegen. Der Bedarf nach weltweiter Mobilität wächst stetig. Der Weg bis zum Ziel kann je nach verwendetem Transportmittel unterschiedlich genutzt werden. Durch Fahrgemeinschaften oder Passagiertransporte können die Mitreisenden die Reisezeit individuell nutzen. Die Fahrzeugführer sind dabei komplett in den Reiseverkehr involviert und werden bereits heute durch unterschiedliche Assistenzsysteme unterstützt. Im Kraftfahrzeugbereich zählen zum Beispiel Geschwindigkeitsregelung, Spur- und Abstandsassistenten sowie Navigationssysteme bereits zum Repertoire der Werksausstattung. In der Luftfahrt halten seit einigen Jahren Autopiloten sowie Systeme zur automatisierten Landung Einzug. Im Bereich der Schifffahrt werden Containerschiffe bereits vollautomatisiert durch eine minimale Besatzung gefahren.
 
-Um einem System die Autonomie zu ermöglichen, müssen einige grundlegende Fähigkeiten gegeben sein. Die erste Bedingung an das System ist das selbstständige Planen von Trajektorien. Bekannte Pfadplanungsansätze arbeiten mit Hinderniskarten, in denen die Hindernisse mit verschiedenen Eigenschaften (wie z.B. der Farbe, der Oberflächenstruktur, etc.) vermerkt werden. Durch bildgebende Sensoren, wie Laserscanner und Kameras, können detektierte Hindernisse zu diesen Karten hinzugefügt oder die vermerkten Eigenschaften der Hindernisse verbessert werden.
+Der Gütertransport befindet sich im Wandel zur Automatisierung. So forschen Versandunternehmen wie Amazon bereits an selbst fliegenden Drohnen zur individuellen Paketzustellung. Ebenfalls kommen automatisierte Systeme zur Überwachung bei verschiedenen Polizeibehörden zum Einsatz.
 
-Damit die von den Sensoren detektierten Hindernisse in die Karten eingetragen werden können, müssen die Sensordaten in ein gemeinsames Koordinatensystem überführt werden. Dafür werden die Sensordaten schrittweise zwischen verschiedenen Koordinatensystemen (Sensor-, Träger- und Weltkoordinatensystemen) transformiert.
+Die Automatisierung verfolgt dabei die Ziele, "dirty, dangerous and demanding" Aufgaben vom Menschen zu übernehmen und das Risiko von Unfällen und Fehlern zu minimieren. Zusätzlich senken effizientere Systeme  den Verbrauch von Ressourcen und verringern die Verschmutzung unserer Umwelt.
 
-Die Transformation der Sensordaten in das globale Koordinatensystem oder in andere Sensorkoordinatensysteme enthält oft unbekannte und variable Parameter. Einerseits ist die genaue Position und Lage (Pose) des Sensors im Gehäuse unbekannt. Andererseits ist die Pose des Sensors auf dem Träger je nach Experiment unterschiedlich und auf Grund platzsparender Konstruktion nur sehr schwer messbar. Dadurch werden die Sensordaten falsch transformiert und die Sensor-Fusion erschwert.
+In den kommenden Jahren wird sich meiner Meinung nach das Transportwesen insofern weiterentwickeln, dass uns Fahrzeuge auf unseren Reisen selbstständig transportieren werden und dabei die dritte Dimension, den Luftraum, nutzen. Dadurch können weitere Strecken in kürzerer Zeit zurückgelegt werden. Die bisherige Unterteilung des Transports von Wasser, Land und Luft wird sich in Slow (Low) und Fast (High) weiterentwickeln.
 
-Die in dieser Arbeit präsentierte Lösung ermöglicht die automatische Bestimmung der Montagepose von \gls{LiDAR}-Sensoren relativ zur \gls{IMU}.
+Durch diesen Fortschritt und die daran geknüpften Anforderungen müssen die Assistenzsysteme grundlegende Aufgaben erfüllen:
 
-Ausgangspunkt für den zu entwerfenden Ansatz sind relative Translationen und Rotationen (\gls{6DoF}) des \gls{LiDAR} zur betrachteten Umwelt. Diese werden mit Hilfe des \gls{ICP} Algorithmus aus sukzessiven Aufnahmen bestimmt. Über den Abgleich der berechneten Transformation, der gemessenen Bewegung der \gls{IMU} und dem Einsatz einer nicht linearen Optimierung, wird anschließend die \gls{6DoF} Transformation zwischen den beiden Sensoren bestimmt.
+- die Umwelt wahrnehmen und klassifizieren;
+- sich selbst in dieser Umgebung lokalisieren;
+- zielführende Entscheidungen selbstständig treffen.
 
-# Grundlagen
+Für diese Arbeit wird folgende Forschungsfrage formuliert: "Ist es möglich, bildgebende Sensoren anhand von visuellen Merkmalen relativ zu gleichzeitig aufgezeichneten Bewegungsdaten zu kalibrieren?" Der präsentierte Ansatz zur Kalibrierung von Laserscannern zu Navigationsdaten soll eine Identifikation des Systems mit seiner Umwelt ermöglichen und das System befähigen, seine Bewegung im Raum mit den Sensordaten zu verknüpfen.
 
-## Die verwendeten Koordinatensysteme
+Dazu werden Laserdaten während der Bewegung sequentiell mit einem \gls{ICP}-Algorithmus registriert. Durch die Registrierung werden die Laserscans anhand von Gemeinsamkeiten aneinander angeglichen und die Unterschiede in Position und Lage in Form einer mehrdimensionalen Transformation berechnet. Parallel zu den Scans werden Navigationsdaten mittels einer \gls{IMU} und einem \gls{GPS} ausgezeichnet. Aus diesen Daten wird eine Bewegungstransformation bestimmt und mit der \gls{ICP}-Transformation verglichen. Durch die Differenz dieser Transformationen wird die Montageposition vom Laserscanner zur \gls{IMU} berechnet.
 
-Autonome Systeme benötigen verschiedene Sensoren, um ihre Umwelt zu vermessen, zu klassifizieren und Entscheidungen zu treffen. Bevor die verschiedenen Daten in einen Zusammenhang gebracht werden können, müssen sie auf eine gemeinsame Datenbasis fusioniert werden.
+# Extrinsische Kalibrierung von Laserscannern zu Inertialen Messeinheiten
 
-Jedes aufgenommene Datum eines Sensors befindet sich in einem Sensorkoordinatensystem. Der Ursprung des Koordinatensystems ist der Nullpunkt des Sensors, den jeder Sensorhersteller unterschiedlich definiert.  
+Das \glspl{DLR} erforscht am Institut für Luftfahrtsysteme in der Abteilung Unbemannte Luftfahrzeuge die automatisierte Bewegung von \gls{UA} in unbekanntem Luftraum. Anforderungen an das automatisierte System sind die Wahrnehmung der Umwelt, die Bestimmung der eigenen Position und Lage (Pose) im Raum und entsprechende Entscheidungen für die Erfüllung einer bestimmten Mission ableiten. Die Grundvoraussetzung zur Umwelt- und Selbstwahrnehmung ist eine gemeinsame Datenbasis der Sensordaten. Dadurch können die verschiedenen Sensorwerte zueinander in Verbindung gebracht werden. Eine Fusion der Daten wird erschwert wenn:
 
-Die verschiedenen Sensoren sind auf einem Sensorträger befestigt. Der Ursprung des sogenannten Trägerkoordinatensystems ist meist der Ursprung der \gls{IMU}. Alle Sensorposen werden relativ zur \gls{IMU}-Pose ausgerichtet.
+- je nach Flugauftrag variable Grundkonfigurationen (verschiedene Sensoren) verwendet werden,
+- je nach Umgebung unterschiedliche Trägersysteme eingesetzt werden (Größen- oder Gewichtsbestimmungen)
+- Beladungszustände variieren, die eine Austarierung der Sensoren erfordern.
 
-Des Weiteren befindet sich das autonome System zu einem bestimmten Zeitpunkt in einer Lage und einer Position in seiner Umgebung. Dessen Bezugsort ist der Ursprung für das Weltkoordinatensystem.
+Einige dieser Probleme können gelöst werden, wenn zu jedem Experiment der Aufbau der Sensorplattform vermessen oder durch eine Konstruktionszeichnungen festgelegt wird. Im Anschluss müssen die erhaltenen Daten in die Sensorfusion eingepflegt und eventuell manuell angepasst werden.
 
-### Das Sensorkoordinatensystem
+Dieses Vorgehen ist aufwendig, fehleranfällig und je nach \gls{UA} schwer umsetzbar. Der in dieser Arbeit vorgestellte Ansatz ermöglicht die Bestimmung der Montageparameter von Laserscannern relativ zu einem Navigationssystem (\gls{IMU} und \gls{GPS}). Die grundlegende Idee besteht darin, Unterschiede in sequentiellen Laserscans mit der gemessenen Bewegung des \gls{UA} zu vergleichen. Für diese Lösung wird eine während der Kalibrierung statische Konfiguration vorausgesetzt. Das bedeutet, dass Laserscanner und die Navigationssensoren zueinander statisch, auf der gleichen Trägerplattform befestigt sind.
 
-Das Sensorkoordinatensystem ist je nach Sensor und Hersteller unterschiedlich definiert. Im Folgenden werden die Koordinatensysteme erläutert, die in dieser Arbeit hauptsächlich Anwendung finden.
+Die folgenden Kapitel sind in die Analyse der Anforderungen zur Umwelt- und Selbstwahrnehmung gegliedert, in denen die jeweiligen technischen sowie physikalische Grundlagen zu den Sensoren erläutert werden. Im Anschluss wird der Ansatz zur relativen extrinsischen Kalibrierung präsentiert. Anschließend wird der im \gls{DIP}-Framework^[Das \gls{DIP}-Framework dient seit 2004 als Plattform zur Evaluation digitaler Bildverarbeitungsalgorithmen in der Abteilung \gls{ULF} am \gls{DLR}. Für weitere Informationen zur grundlegenden Idee und den Hintergründen des Frameworks siehe @Guth2004 und @Goormann2004.] als Filter implementierte Algorithmus validiert.
 
-### Das Trägerkoordinatensystem
+## Wahrnehmung der Umwelt
 
-Das Trägerkoordinatensystem beschreibt die Position und Lage der verschiedenen Sensoren zum Bezugspunkt des Trägers. Als Träger wird meist die Konstruktion bezeichnet, auf dem die Sensoren befestigt sind. Da in vielen Anwendungen auch Parameter gewünscht sind, die den Zustand des autonomen Systems beschreiben, wird in dieser Arbeit das autonome System als Träger betrachtet.
+Umweltwahrnehmung ist für Lebewesen, wie den Menschen, eine überlebenswichtige Fähigkeit. Durch unsere Sinne erkennen wir unser Umfeld, können die Umgebung klassifizieren und bedrohliche Situationen erkennen. Bedrohlich bezeichnet dabei Situationen, in denen entweder wir, unsere Mitmenschen oder Ziele eines Auftrags gefährdet sind. Ein großer Bestandteil unserer Wahrnehmung ist visuell und erfolgt durch unsere Augen.
 
-Der Ursprung und die Ausrichtung der Koordinatenachsen hängt von der Anwendung des Trägers ab. Ein autonomes System hat die Aufgaben, autonom in einer unbekannten Welt zu navigieren und sich entsprechend zu bewegen. Aus diesem Grund wird der Ursprung des Koordinatensystems entweder in den Schwerpunkt des Trägers oder in das Sensorkoordinatensystem der Beschleunigungssensoren gelegt. Die Ausrichtung entspricht dabei der Hauptbewegungsrichtung des Trägers.
+Automatisierte Systeme verwenden zur visuellen Wahrnehmung sogenannte bildgebende Sensoren. Diese Sensoren erstellen in zeitlichen Abständen ein Bild für einen physikalisch begrenzten Blickbereich (engl. field of view). Dabei wird aus Messgrößen eines realen Objektes ein Abbild erzeugt, wobei die Messgröße oder eine daraus abgeleitete Information ortsaufgelöst und über Helligkeitswerte oder Farben kodiert visualisiert wird. \gls{LRF} sind Sensoren, die zur Bestimmung von Entfernungen verwendet werden. Einsatzgebiete sind unter Anderem topographische Geländeaufnahmen (Kartographie) [@Lindenberger1993], Detektion und Tracking von Hindernissen [@Mendes2004] und Identifikation atmosphärischer Eigenschaften [@Wulfmeyer1998; @Browell1998].
 
-### Das Weltkoordinatensystem
+### Exemplarischer Aufbau und Funktionsweise eines LRFs
 
-Das Weltkoordinatensystem bezieht sich auf die Umgebung, in der sich der Träger bewegt. Es dient der Kartografie durch die Sensorwerte und zur Navigation des Trägers. Der Koordinatenursprung kann durch die \gls{GPS}-Position eindeutig festgelegt werden.
+Gemäß @Zabler2006 werden bildgebende Sensoren in flashende und scannende Systeme unterteilt. Ein flashendes System vermisst, basierend auf einem Triggersignal, einmalig das komplette Blickfeld des Sensors. Ein scannendes System generiert kontinuierlich aufeinanderfolgende Messungen im Blickfeld. \gls{LRF} können sowohl als flashendes als auch als scannendes System gebaut werden. 
 
-![Schematische Darstellung des Weltkoordinatensystems\label{fig:schematische_darstellung_des_weltkoordinatensystems}](https://rawgit.com/gismo141/mastersthesis/master/Images/world_coordinatesystem.png){width: "500px"}
+Ein \gls{LRF} besteht gemäß Abbildung @fig:aufbau_LRF aus einer Laserquelle, einem Spiegel und einem Gehäuse. Die Laserquelle erzeugt durch "Pulsen" von Ladungsträgern eine Strahlung mit konstanter Wellenlänge. Die energiereiche Strahlung wird anschließend gebündelt an einem Spiegel abgelenkt und verlässt das Gehäuse.
 
-## Koordinatentransformation nach Denavit-Hartenberg
+<!-- ![Exemplarischer Aufbau eines \gls{LRF} (schematisch)]() #fig:aufbau_LRF -->
 
-- Bezug auf Eigen
+Zu diesem Zeitpunkt wird im \gls{LRF} eine Zeitmessung gestartet. Trifft der Laserstrahl auf ein Hindernis, so wird er teilweise vom Hindernis absorbiert und reflektiert.^[Wie stark ein Hindernis die Laserstrahlung absorbiert, ist abhängig von der Beschaffenheit der Hindernisse, dem Auftreffwinkel zwischen Laserstrahl und Hindernis und der Wellenlänge der Laserstrahlung.]
 
-Zur Verortung von Sensordaten in der globalen Weltkarte, müssen sie Schritt-für-Schritt vom Sensorkoordinatensystem in das Weltkoordinatensystem transformiert (überführt) werden. Diese Problematik ist vergleichbar mit der Bewegungsbeschreibung eines Roboterarmes. Dabei wird in jedes Gelenk ein Koordinatensystem gelegt, dessen Z-Achse in Richtung des nächsten Gelenks im Roboterarm zeigt. Folglich kann die Bewegung des Aktors durch die schrittweise Transformation zwischen den Gelenken oder durch eine einzige Transformationsmatrix beschrieben werden.
+Der reflektierte Laserstrahl wird vom \gls{LRF} detektiert. Durch Differenzbildung von Austritts- und Eintrittszeitpunkt gemäß (@eq:laufzeit) wird die Laufzeit des Laserstrahls bestimmt.
 
-## Sensortechnik
+$$ t_{Laufzeit} = t_{Eintritt} - t_{Austritt} $$ {#eq:laufzeit}
 
-Reflektivität, Laufzeitmessung, Fehlerbetrachtung
+Da die gemessene Laufzeit den Hin- und Rückweg bezeichnet, hat der Laserstrahl die doppelte Wegstrecke zurückgelegt. Durch die Annahme einer konstanten Lichtgeschwindigkeit im Vakuum (@eq:lichtgeschwindigkeit) wird die Laufzeit halbiert und mit der Lichtgeschwindigkeit gemäß (@eq:distanzmessung) multipliziert.
 
-### Lasersanner
+$$ c = 299792458 \frac{\text{m}}{\text{s}} $$ {#eq:lichtgeschwindigkeit}
 
-Laserscanner liefern die Messwerte im Allgemeinen in Polarkoordinaten. Dabei handelt es sich um Messwerte und Winkelangaben und sind abhängig vom Aufbau des \gls{LiDAR}.
+$$ d = \frac{t_{Laufzeit}}{2} * c $$ {#eq:distanzmessung}
 
-- Verzerrung durch Bewegung
-- Distanzfehler (+/- 10 cm)
-- Winkelfehler
+Die erhaltene Wegstrecke ist die Entfernung vom \gls{LRF} zum Hindernis.
 
-### Inertiale Messeinheiten
+### Besonderheiten bei der Messung von Laserstrahlung
 
-Aufbau:
+Die Messung von Laserlicht unterliegt verschiedenen Umwelteinflüssen. Ob eine Messung verwertbar ist, ist abhängig:
 
-- Gyro
-- Beschleunigung
+- von der Oberfläche des zu detektierenden Hindernisses,
+- ob der \gls{LRF} stationär an einem Ort oder im Raum bewegt wird,
+- wie weit die Hindernisse vom \gls{LRF} entfernt sind.
 
-- Masseschwerpunkt wird als Hauptbezugssystem verwendet
+#### Mehrfachreflektionen durch unterschiedliche Hindernisdichten
 
-#### Gyros
+Je nach Beschaffenheit der Hindernisse, kann es zu Mehrfachreflektionen (Echos) kommen. Abbildung \ref{fig:} zeigt eine Beispielumgebung mit einem Haus, einem Baum und einem \gls{LRF}. Der gleiche Laserstrahl wird teilweise am Hindernis reflektiert und durchgelassen. Der durchdrungene Laserstrahl wird anschließend an einem weiteren Hindernis reflektiert und trifft zeitlich verzögert zum ersten Echo am \gls{LRF} auf.
 
-Fehlerquellen:
+#### Messung in Bewegung
 
-- Drift
+#### Detektion von Hindernissen aus Glas und Wasser
 
-#### Beschleunigungssensoren
+## Wahrnehmung der aktuellen Position und Lage
 
-Bewegungssensoren messen die Beschleunigungen in einer bestimmten Richtung und liefern meist skalare Messwerte. Werden mehrere Beschleunigungssensoren zusammengefasst, entsteht ein Sensorsystem, eine sogenannte \gls{IMU}. Dieses Sensorsystem liefert je nach Ausführung mehrdimensionale Messwerte zur Bestimmung von Position und Lage in der  befindlichen Welt beschreiben.
+Lage und Position im 3-dimensionalen Raum werden als (\gls{6DoF}) bezeichnet, wobei die 6 Freiheitsgrade in 3 translatorische und 3 rotatorische Freiheitsgrade unterteilt werden. Die translatorischen Freiheitsgrade definieren die Position in $X$-, $Y$-, und $Z$-Achse in einem Koordinatensystem. Die rotatorischen Freiheitsgrade bestimmen die Lage an dieser Position durch Rotationen um die Koordinatenachsen. Gemäß @tbl:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300 werden die 3 Eulerschen Winkel $\Phi$ (Phi), $\Theta$ (Theta) und $\Psi$ (Psi) verwendet.
 
-Fehlerquellen:
-
-- Ungenauigkeit des Beschleunigungssensors
-
-### Systeme zur globalen Positionsbestimmung
-
-- Notwendigkeit bei der Kalibrierung, die IMU zu stabilisieren?
-
-Fehlerquellen:
-
-- fehlerhaftes GPS (bis zu 15 m)
-
-### Systemfehler
-
-- Zeitlicher Versatz der Messungen zwischen Sensoren (lösbar durch Synchronisation)
-- Blindzeit (Sensoren messen in unterschiedlichen Intervallen)
-- fehlerhafte Angaben zur Pose zueinander
-
-## Algorithmen zur Transformation
-
-### ICP der PCL
-
-Fehlerquellen:
-
-- Rechenungenauigkeiten durch Transformationen
-- Elimination wichtiger Features bei Datenreduktion (z.B. Statistical Outlier Removal)
-
-#  Kalibrierung von LiDAR-Sensoren zu Inertialen Messeinheiten
-
-Sensoren stellen eine Grundlage der Wissensgewinnung für ein \gls{UA} dar. Dieses Wissen kann anschließend in verschiedenen Algorithmen verwendet werden, um Trajektorien zu planen, zu verfolgen oder weiterführende Entscheidungen zu treffen. Die Voraussetzung für dieses Wissen ist die Glaubwürdigkeit. Glaubwürdigkeit bedeutet dabei, dass zur genauen Verortung von Hindernissen deren genaue Position bekannt sein muss. Die Sensoren sind an jeweils unterschiedlichen Posen am Träger, dem \gls{UA}, angebracht. Einige Gründe dafür sind:
-
-- variable Grundkonfigurationen, die je nach Flugauftrag unterschiedliche Sensoren transportieren,
-- unterschiedliche Trägersysteme, da je nach Umgebung bestimmte \gls{UA} eingesetzt werden müssen (Größen- oder Gewichtsbestimmungen)
-- verschiedene Beladungszustände, die eine Austarierung der Sensoren erfordern.
-
-Daraus resultiert, dass für jede unterschiedliche Verwendung des \gls{UA} die Sensorparameter erneut kalibriert werden müssen. Bei bildgebenden Sensoren wie Kameras oder Laserscanner ist die genaue Bestimmung der Pose elementar, da es sonst nicht möglich ist, sichere und eindeutige Rückschlüsse auf die Umgebung ziehen zu können. Auf Grund einer nicht-planaren Trägeroberfläche und einer dynamischen Flotte an \gls{UA}'s gibt es bisher kein automatisiertes Verfahren zur Kalibrierung. Bisher werden die Konfigurationen stets von Hand vermessen und kalibriert. Dadurch kommt es zu großen Ungenauigkeiten und Inkonsistenzen in den Vermessenen Positionen. Des Weiteren ist die Vermessung der Lage des Sensors sehr schwierig.
-
-Eine automatisierte Kalibrierung zwischen \gls{LiDAR} und \gls{IMU} Sensoren ermöglicht eine präzisere und deterministische Verwendung. Des Weiteren sollen die Träger problemlos angepasst oder ausgetauscht werden können. Die Kalibrierung soll eine genauere Bestimmung der Pose ermöglichen, als bisher von Hand möglich. Die folgenden Kapitel erläutern die verschiedenen in Betracht gezogenen Ansätze, beleuchten die jeweiligen Vor- und Nachteile und beschreiben die schlussendlich gewählte Implementierung.
-
-## Problemanalyse
-
-Die Bestimmung von Lage und Position im 3-dimensionalen Raum bezeichnet die Bestimmung von 6 Freiheitsgraden (\gls{6DoF}). Die 6 Freiheitsgrade werden in 3 translatorische und 3 rotatorische Freiheitsgrade unterteilt. Die translatorischen Freiheitsgrade bestimmen die Position in $X$-, $Y$-, und $Z$-Achse in einem Weltkoordinatensystem. Die rotatorischen Freiheitsgrade bestimmen die Lage an dieser Position in Bezug zur Erdoberfläche. Gemäß \ref{tbl:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300} werden die 3 Eulerschen Winkeln $\Phi$ (Phi), $\Theta$ (Theta) und $\Psi$ (Psi) verwendet.
+Table: Bezeichnung der Winkel gemäß DIN 9300 / ISO 1151-2:1985. {#tbl:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300}
 
 | Winkel   | Bezeichnung | Rotationsachse |
 | :-----   | :-------    | :-----:        |
@@ -132,74 +96,98 @@ Die Bestimmung von Lage und Position im 3-dimensionalen Raum bezeichnet die Best
 | $\Theta$ | Nickwinkel  | $Y$            |
 | $\Psi$   | Rollwinkel  | $X$            |
 
-Table: Bezeichnung der Winkel gemäß DIN 9300 / ISO 1151-2:1985\label{tab:bezeichnung_der_winkel_gemaess_der_luftfahrt_din_9300}
+### Bestimmung der Position mittels GPS
 
-## Möglichkeiten zur Kalibrierung
+### Bestimmung der Lage mittels IMU
+
+## Stand der Forschung
+
+Bisher wurde die extrinsische Kalibrierung von Laserscannern zu \glspl{IMU} anhand fest definierter "Features"^[Features bezeichnet eindeutig erkennbare und unterscheidbare Merkmale in aufgenommenen Bildern.] unter anderem durch @Talaya2004 vorgenommen. Dabei wurden Häuserwände vermessen, deren \gls{GPS}-Positionen bestimmt und mit reflektierenden Materialien beklebt. Anschließend wurden die unterschiedlichen Intensitäten der Laserreflektionen mit den \gls{GPS}-Positionen verglichen, wodurch die Montagepose des Laserscanners bestimmt werden konnte. Das Verfahren basiert auf der Erkennung von planaren Features. Für den Fall, dass keine planaren Flächen zur Verfügung stehen, präsentiert @Chan2015 einen Ansatz, der zylinderförmige Features aus Laserscans zur Kalibrierung verwendet. Es wurden verschiedene Ausrichtungen der Zylinder und unterschiedliche Montagepositionen des Laserscanners untersucht. Das Ergebnis waren einige erfolgreiche Positionsbestimmungen, jedoch auch der Fakt, dass die Verwendung mehrerer unterschiedlich ausgerichteter Zylinder während der Messung zur Fehlidentifikation führten.
+
+Natürliche Umgebungen weisen kaum planare oder zylinderförmige Formen auf, sodass diese Ansätze nur in urbanem Gelände Anwendung finden. @Sheehan2011 identifiziert Scannerparameter anhand von einem Maß der Vielfältigkeit von Punktwolken (Rényi Quadratic Entropy). Ihr Hauptaugenmerk liegt dabei auf der Synchronisation mehrerer Laserscanner zueinander um detailreiche Umgebungsscans zu generieren. Des Weiteren befinden sich die Scanner zwar in einer rotatorischen Bewegung jedoch translatorisch in einem stationären Zustand.
+
+@Davison2007 präsentieren einen \gls{SLAM} Ansatz um mehrere Kamerabilder zu einer zwar spärlichen aber nachhaltigen Landkarte zusammenzufügen. Sie verwenden dafür ein probabilistisches Feature-basiertes Karten- und ein allgemeines Bewegungsmodell einer Kamera. Informationen über die Entfernungen wurden durch die Features definiert. Einen Ansatz zur Generierung von 3D-Landkarten mit Entfernungsinformationen bietet @May2008. Der Ansatz verwendetet \gls{ToF}-Kameras und einen Roboter, der für jede Aufnahme stoppt, wodurch stabile Punktwolken generiert werden können. Alle vorgestellten Ansätze setzen eine genaue Kalibrierung zwischen bildgebenden Sensor und posegebenden Sensor voraus. Die Sensordaten werden fusioniert um das Endergebnis zu verbessern. Durch eine ungenau Kalibrierung werden die Ergebnisse stark verschlechtert oder unbrauchbar.
+
+##  Extrinsische Kalibrierung mit Nicht-linearem ICP-Optimierer 
+
+### Möglichkeiten zur Kalibrierung
 
 Für die Kalibrierung der Sensoren werden folgende Anforderungen definiert:
 
 - die Umgebung wird als unveränderlich und starr angenommen,
 - die zu vermessende Bewegung muss größer als die größte Messungenauigkeit des Systems sein.
 
-### Im Sensorkoordinatensystem
+#### Im Sensorkoordinatensystem
 
-#### Ohne Bewegungskorrektur
+##### Ohne Bewegungskorrektur
 
 \ref{fig:kalibrierung_im_sensorkoordinatensystem} zeigt die Kalibrierung im Sensorkoordinaten
 
-![Kalibrierung im Sensorkoordinatensystem\label{fig:kalibrierung_im_sensorkoordinatensystem}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImSC.pdf)
+![Kalibrierung im Sensorkoordinatensystem](Images/kalibrierungImSC.pdf) {#fig:kalibrierung_im_sensorkoordinatensystem}
 
-#### Mit Bewegungskorrektur
+##### Mit Bewegungskorrektur
 
-![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImSCmitKorr.pdf)
+![Kalibrierung im Sensorkoordinatensystem mit Bewegungskorrektur](Images/kalibrierungImSCmitKorr.pdf) {#fig:kalibrierung_im_sensorkoordinatensystem_mit_korr}
 
-### Im Weltkoordinatensystem
+#### Im Weltkoordinatensystem
 
-#### Ohne Bewegungskorrektur
+##### Ohne Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem\label{fig:kalibrierung_im_weltkoordinatensystem}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImWC.pdf)
+![Kalibrierung im Weltkoordinatensystem](Images/kalibrierungImWC.pdf) {#fig:kalibrierung_im_weltkoordinatensystem}
 
-#### Mit Bewegungskorrektur
+##### Mit Bewegungskorrektur
 
-![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur\label{fig:kalibrierung_im_weltkoordinatensystem_mit_korr}](https://rawgit.com/gismo141/mastersthesis/master/Images/kalibrierungImWCmitKorr.pdf)
+![Kalibrierung im Weltkoordinatensystem mit Bewegungskorrektur](Images/kalibrierungImWCmitKorr.pdf) {#fig:kalibrierung_im_weltkoordinatensystem_mit_korr}
 
-# Validierung
+## Validierung
 
-Zur Validierung der Kalibrier-Lösung wurden zwei Experimente durchgeführt. Das erste Experiment dient zur Bestimmung des "Common Ground" anhand eines konstruierten und vermessenen Aufbaus. Das zweite Experiment dient der Erprobung an einem Flugversuch eines automatisierten Hubschraubers. Im Folgenden werden beide Experimente bezüglich ihres Aufbaus, des Ablaufs und den jeweiligen Resultaten erläutert.
+Zur Validierung der Kalibrierlösung wurden zwei Experimente durchgeführt. Das erste Experiment dient zur Bestimmung des "Common Ground" anhand eines konstruierten und vermessenen Aufbaus. Das zweite Experiment dient der Erprobung an einem Flugversuch eines automatisierten Hubschraubers. Im Folgenden werden beide Experimente bezüglich ihres Aufbaus, des Ablaufs und den jeweiligen Resultaten erläutert.
 
-## Einsatzgebiet
+### Einsatzgebiet
 
-autonomer Hubschrauberflug
+Das Einsatzgebiet 
 
-## Versuch - "Common Ground"
-
-### Aufbau
+### "Verwendete Sensoren"
 
 **Welche Sensorprodukte werden wie verwendet (Eigenschaften, Auflösungen etc.)?**
-
-Mit dem Experiment wird die Genauigkeit der Kalibrierungslösung bestimmt. Der Aufbau ist minimal und besteht rein aus den zur Kalibrierung benötigten Geräten.
 
 #### Der Laserscanner
 
 Als Laserscanner kommt der Velodyne HDL-32e (im Folgenden als Velodyne bezeichnet) zum Einsatz. Der Sichtbereich des Velodyne beträgt 360° um seine Y-Achse. Durch 32 vertikal angeordnete Laserquellen beträgt der Sichtbereich in der ZX-Ebene zwischen +10° und -30°. Der Messbereich liegt bei 1m bis 100m mit einer Standardabweichung von +/- 2cm bei 25m. Die horizontale Auflösung ist abhängig von der, vom Anwender eingestellten, Bildrate (Framerate). Die Framerate kann vom Benutzer zwischen 5Hz und 20Hz gewählt werden. Für diesen Versuch wurde die Framerate auf 10Hz eingestellt.
 
-![Schematische Darstellung des Velodyne HDL-32e mit Koordinatensystem\label{fig:schematische_darstellung_des_velodyne_hdl-32e_mit_koordinatensystem}](https://rawgit.com/gismo141/mastersthesis/master/Images/velodyne.png){width: "500px"}
+![Schematische Darstellung des Velodyne HDL-32e mit Koordinatensystem](Images/velodyne.png) {#fig:schematische_darstellung_des_velodyne_hdl-32e_mit_koordinatensystem}
 
 Der Laserscanner misst den Rotationswinkel $\Theta$, die Distanz zum Objekt, dem Intensitätswert des jeweiligen Hits (ein Hit bezeichnet den Auftreffpunkt des Laserstrahls auf einem Objekt) und einem Zeitstempel. Die aufgenommenen Sensordaten werden per \gls{UDP} an den Flugrechner weitergeleitet und dort in Sensorkoordinaten transformiert.
 
 #### Die inertiale Messeinheit
 
-Als inertiale Messeinheit kommt die iMar \gls{IMU} iTraceRT-F400-Q zum Einsatz. Die \gls{IMU} bietet eine "Deep-Coupled" Sensorumgebung aus \gls{INS} und \gls{GNSS} 
+Als inertiale Messeinheit kommt die iMar \gls{IMU} iTraceRT-F400-Q zum Einsatz. Die \gls{IMU} bietet eine hochgenaue "Deep-Coupled" Sensorumgebung aus \gls{INS} und \gls{GNSS}. Das \gls{INS} wird durch Fiber-Optische Gyroskope realisiert; das \gls{GNSS} unterstützt \gls{GPS}, \gls{GLONASS} sowie \gls{BeiDou} Satelliten.
 
-Table: Montageabstände zwischen den GPS-Antennen und der IMU\label{tab:montageabstaende_zwischen_den_gps-antennen_und_der_imu}
+Table: Montageabstände zwischen den GPS-Antennen und der IMU. {#tbl:montageabstaende_zwischen_den_gps-antennen_und_der_imu}
 
-|       | Antenne 1 | Antenne 2 |
-| :-:   | :----:    | :------:  |
-| **X** | 44.5      | -114.0    |
-| **Y** | 11.0      | 0.0       |
-| **Z** | -2.0      | -3.0      |
+|       | Antenne 1 in [mm] | Antenne 2 in [mm] |
+| :-:   | :----:            | :------:          |
+| **X** | 44.5              | -114.0            |
+| **Y** | 11.0              | 0.0               |
+| **Z** | -2.0              | -3.0              |
 
-### Ablauf
+### Versuch - "Common Ground"
+
+#### Aufbau
+
+Mit dem Experiment wird die Genauigkeit der Kalibrierungslösung bestimmt. Der Aufbau besteht aus den zur Kalibrierung benötigten Geräten gemäß Tabelle @tbl:Common-Ground-Geraete.
+
+Table: Geräteübersicht. {#tbl:Common-Ground-Geraete}
+
+| Anzahl | Gerät                                                          |
+| :---   | :--                                                            |
+| 1      | Laserscanner Velodyne HDL-32e                                  |
+| 1      | iMAR IMU iTrace RT-F400Q                                       |
+| 1      | Spannungsversorgungsgerät (\gls{DLR}-Eigenbau)                 |
+| 1      | Flugcomputer zur Aufnahme der Sensordaten (\gls{DLR}-Eigenbau) |
+| 2      | Novatel \gls{GPS}-Antennen                                     |
+
+#### Ablauf
 
 Während eines Experimentalfluges werden in regelmäßigen Abständen Bewegungs- und Laserdaten aufgenommen. Die Abstände richten sich nach den jeweiligen Fähigkeiten der Sensoren.
 
@@ -208,24 +196,25 @@ Während eines Experimentalfluges werden in regelmäßigen Abständen Bewegungs-
 ./artis/bin/itracert-logger-release-linux64-g++
 ```
 
-### Ergebnisse
+#### Ergebnisse
 
-## Versuch - "In-Flight"
+### Versuch - "In-Flight"
 
-### Aufbau
+#### Aufbau
 
 Welche Sensorprodukte werden wie verwendet (Eigenschaften, Auflösungen etc.)?
 
-### Ablauf
+#### Ablauf
 
 Während eines Experimentalfluges werden in regelmäßigen Abständen Bewegungs- und Laserdaten aufgenommen. Die Abstände richten sich nach den jeweiligen Fähigkeiten der Sensoren.
 
-### Ergebnisse
+#### Ergebnisse
 
-## Gesamtresultat
+### Gesamtresultat
 
 # Fazit und Ausblick
 
 1. Was wurde gemacht?
 2. Was war das Resultat?
 3. Was ergeben sich für Folgeaufgaben?
+

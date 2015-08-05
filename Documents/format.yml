@@ -25,7 +25,7 @@ geometry: |
     , includehead
     , a4paper
 lang: ngerman
-biblio-title: Literaturverzeichnis
+bibliotitle: Literaturverzeichnis
 linkcolor: black
 citecolor: black
 urlcolor: black
@@ -38,15 +38,11 @@ include-before:
     - Additions/Titelseite
 linestretch: "1.5"
 listGlossary: true
-figureTitle: "Abbildung"
-figPrefix: "Abbildung"
-listFigures: true
 listAlgorithms: false
-#listListings: true
-tableTitle: "Tabelle"
-tblPrefix: "Tabelle"
-listTables: true
 numbersections: true
-abstract: Blubbeldiblubd
-thanks: Danke an alle
+# abstract: Blubbeldiblubd
+# thanks: "Ich danke rechtherzlich meinem Dozenten Professor Dr. Harald Görl, der mir die Chance und sein Vertrauen gab, diese Masterarbeit zu ermöglichen und mir durch die anregenden Gespräche ein unvergleichlich interessantes Studium gestaltete.
+#         Des Weiteren bedanke ich mich bei Stefan Krause, der stets meinen Fragen mit Rat und Tat zur Seite stand und mich erstklassig betreute.
+#         Ebenfalls danke ich allen Mitarbeitern und Co-Studenten am DLR in Braunschweig, für die freundliche Aufnahme, die gewonnenen Erkenntnisse und das angenehme Arbeitsumfeld.
+#         Ich danke meinen Eltern für die tatkräftige Unterstützung bei meinen Studien und ganz besonders meiner Frau, Ramona Riedel, und ihren Eltern, die mir jederzeit motivierend zur Seite standen."
 ---

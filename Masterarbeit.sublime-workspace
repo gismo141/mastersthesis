@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Mase",
+				"MASTERTHESIS"
+			],
+			[
 				"fil",
 				"files"
 			],
@@ -631,20 +635,32 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 63.0,
-		"last_filter": "Build: ini",
+		"height": 400.0,
+		"last_filter": "inst",
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
 			[
 				"Build: ini",
 				"Build With: CMake - Init"
 			],
 			[
-				"Build: clea",
+				"Build: clean",
 				"Build With: CMake - Clean"
 			],
 			[
-				"Build: clean",
+				"Build: clea",
 				"Build With: CMake - Clean"
 			],
 			[
@@ -652,8 +668,60 @@
 				"Build: Cancel"
 			],
 			[
+				"git",
+				"git: status"
+			],
+			[
+				"ci",
+				"Citer: Search"
+			],
+			[
+				"",
+				"Citer: Search"
+			],
+			[
+				"cite",
+				"Citer: Show All"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"w",
+				"Toggle Writing Style"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"git bla",
+				"git: blame current file"
+			],
+			[
+				"git ini",
+				"git: init"
+			],
+			[
 				"dic",
 				"Dictionaries: Set Language"
+			],
+			[
+				"stat",
+				"git: status"
+			],
+			[
+				"push",
+				"git: push"
+			],
+			[
+				"gits",
+				"git: status"
 			],
 			[
 				"instal",
@@ -672,24 +740,8 @@
 				"Dictionaries: Set Language"
 			],
 			[
-				"push",
-				"git: push"
-			],
-			[
 				"com",
 				"git: commit"
-			],
-			[
-				"git",
-				"git: status"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"pre",
@@ -702,10 +754,6 @@
 			[
 				"previw",
 				"Preview Graphviz Snippet"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"ipy",
@@ -734,10 +782,6 @@
 			[
 				"linter",
 				"SublimeLinter: Clear Caches"
-			],
-			[
-				"lin",
-				"SublimeLinter: Lint This View"
 			],
 			[
 				"lint",
@@ -808,10 +852,6 @@
 				"Build: Cancel"
 			],
 			[
-				"remo",
-				"Package Control: Remove Package"
-			],
-			[
 				"over",
 				"Package Control: Upgrade/Overwrite All Packages"
 			],
@@ -838,10 +878,6 @@
 			[
 				"ssmak",
 				"Set Syntax: Makefile"
-			],
-			[
-				"upgra",
-				"Package Control: Upgrade/Overwrite All Packages"
 			],
 			[
 				"upgrad",
@@ -988,11 +1024,11 @@
 				"Package Control: Upgrade Package"
 			]
 		],
-		"width": 610.0
+		"width": 601.0
 	},
 	"console":
 	{
-		"height": 576.0,
+		"height": 215.0,
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
@@ -1009,14 +1045,67 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents"
+		"/Users/michaelriedel/Downloads/Masterarbeit",
+		"/Users/michaelriedel/Downloads/Masterarbeit/Documents"
 	],
 	"file_history":
 	[
+		"/Volumes/Lima-michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Umweltwahrnehmung.md",
+		"/Volumes/Lima-michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Hauptteil.md",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/WordCount/WordCount.sublime-settings",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/WordCount.sublime-settings",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/laserIMUCalibration/src/filter/calibrator.cpp",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/CMakeLists.txt",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/Einleitung.md",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Additions/Abkuerzungen.tex",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Masterarbeit.sublime-project",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/quotes.md",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/.gitignore",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/Hauptteil.md",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/build/product/Masterarbeit.pdf",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/CMakeLists.txt",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/Grundlagen.md",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/Validierung.md",
+		"/Users/michaelriedel/.config/mackup/.pandoc/templates/t_thesis.tex",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/build/Documents/format.yml",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/format.yml",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/Documents/Einleitung_alternativ.md",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/build/Documents/Masterarbeit.pdf",
+		"/Users/michaelriedel/Dropbox/Masterarbeit/build/Documents/Masterarbeit.tex",
+		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Citer.sublime-settings",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Grundlagen.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Einleitung_alternativ.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Documents/Masterarbeit.pdf",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter/calibrator.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object/fileHandling.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object/dataTypes.h",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui/visualizer.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/object/fileHandling.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/README.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/main.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/calibration.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter/calibrator.cpp",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/CMakeLists.txt",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Fazit.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Validierung.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Einleitung.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Abkuerzungen.tex",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Hauptteil.md",
+		"/Users/michaelriedel/.pandoc/templates/t_brief.tex",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/epub.css",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Documents/Masterarbeit.epub",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Masterarbeit.md",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/github.css",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Anhang.md",
+		"/Users/michaelriedel/Developer/pssg/Makefile",
+		"/Users/michaelriedel/Developer/pssg/_layout.html",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Documents/Masterarbeit.html",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Masterarbeit.html",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/pandoc.css",
+		"/Users/michaelriedel/Developer/Markdown-CMake-Pandoc/.#",
+		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Titelseite.tex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/format.yml",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/.gitignore",
 		"/Users/michaelriedel/Downloads/CM_test_Pydot_ranksame",
@@ -1025,17 +1114,12 @@
 		"/var/folders/1_/8v2pl25n1cb6j5rqgwklx_2h0000gn/T/com.apple.iChat/Messages/Transfers/Bachelorarbeit_Streck.pdf",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Images/CMakeLists.txt",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/CMakeLists.txt",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Abkuerzungen.tex",
 		"/Users/michaelriedel/Developer/mastersthesis/Documents/CMakeLists.txt",
 		"/Users/michaelriedel/Developer/mastersthesis/Research.tex",
 		"/Users/michaelriedel/Downloads/Untitled.tex",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/object/dataTypes.h",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/README.md",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeWritingStyle.sublime-settings",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/SublimeWritingStyle/SublimeWritingStyle.sublime-settings",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Documents/Anhang.md",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/kalibrierungImSC.dot",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Diagrams/CMakeLists.txt",
 		"/Users/michaelriedel/.pandoc/templates/template.latex",
@@ -1043,27 +1127,19 @@
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research.tex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Research.",
 		"/Users/michaelriedel/.gitignore_global",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/main.cpp",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/filter/calibrator.cpp",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/filter/calibrator.h",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/3d.plot",
 		"/Users/michaelriedel/Developer/raspberry-pi-sd-installer-os-x/install",
 		"/Users/michaelriedel/Developer/rpi-buildroot/Makefile",
 		"/Users/michaelriedel/.ssh/known_hosts",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/Titelseite.tex",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Citer.sublime-settings",
 		"/Users/michaelriedel/Developer/test/template.latex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/Additions/bibformat.tex",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/Masterarbeit.tex",
 		"/Users/michaelriedel/Developer/test/test.md",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/AcademicMarkdown.sublime-settings",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/Doxyfile",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/gui/visualizer.cpp",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/inc/gui/visualizer.h",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/build/plot",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/src/CMakeLists.txt",
-		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/CMakeLists.txt",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/.gitignore",
 		"/Users/michaelriedel/Documents/Ausbildung/UniBw/Masterarbeit/laserIMUCalibration/Documentation/html/index.html",
@@ -1101,53 +1177,11 @@
 		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_3ddt.cpp",
 		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/CTags.sublime-settings",
 		"/usr/include/c++/4.2.1/bits/stringfwd.h",
-		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_goicp.h",
-		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_main.cpp",
-		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_icp3d.hpp",
-		"/Users/michaelriedel/Developer/Go-ICP_V1.3/CMakeLists.txt",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/SublimeAStyleFormatter.sublime-settings",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/scan_pcl_visualizer.cpp",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/icp_with_noise.cpp",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcd_write.cpp",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/interactive_icp.cpp",
-		"/Users/michaelriedel/Downloads/test.cpp",
-		"/Users/michaelriedel/.bash_profile",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/statistical_noise_removal.cpp",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcl_icp.cpp",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pcl_icp.h",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Masterarbeit.md",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/C++11.sublime-settings",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/User/Markdown Extended.sublime-settings",
-		"/Users/michaelriedel/Library/Application Support/Sublime Text 3/Packages/CTags/CTags.sublime-settings",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Abkuerzungen.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Aufgabenstellung.md",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/scan_1412242514_981709.txt",
-		"/Users/michaelriedel/Developer/Go-ICP_V1.3/doc/Doxyfile",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Titelseite.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/scan_1412242514_182498.pcd",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/CMakeLists.txt",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/scan_1412242514_182498.txt",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/.build/Masterarbeit.aux",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/.build/Masterarbeit.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Thanks.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Makefile",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/format.yml",
-		"/usr/local/bin/brew-update.sh",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/pointclouds/monkey.ply",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Code/.gitignore",
-		"/Users/michaelriedel/Developer/mastersthesis/monkey.ply",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Additions/Abstract.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Masterarbeit/Thanks.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Studienarbeit/Dokument/Kapitel/00_Studienarbeit.md",
-		"/Users/michaelriedel/Dropbox/Studium/Bachelor/Bachelorarbeit/Dokument/Bachelorarbeit.tex",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Algorithmische Geometrie/Komplexitäten.md",
-		"/Users/michaelriedel/Dropbox/Studium/Master/Algorithmische Geometrie/Konvexe Hülle.md",
-		"/Users/michaelriedel/brew-update.sh",
-		"/Users/michaelriedel/Developer/mathTest/protokoll_routing_funktioniert.txt"
+		"/Users/michaelriedel/Developer/Go-ICP_V1.3/src/jly_goicp.h"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
@@ -1170,6 +1204,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Eingaben",
+			"https://rawgit.com/gismo141/mastersthesis/master/",
+			"biblio-title",
+			"$if(tables)$",
+			"tables",
+			"booktabs",
+			"toprule",
+			"calib",
+			"Fusion",
+			" ",
+			"raw.githubusercontent.com",
+			"/masterthesis/master",
+			"Images/",
 			"{width: \"500px\"}",
 			" {width: \"500px\"})",
 			"https://rawgit.com/gismo141/mastersthesis/master/",
@@ -1284,20 +1331,7 @@
 			"layout",
 			"css",
 			"../Diagrams ",
-			"-o ${CMAKE_CURRENT_SOURCE",
-			"-o ",
-			"-Tpdf ",
-			"\n	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}",
-			"Diagrams",
-			"digraph",
-			"-o ",
-			"${CMAKE_CURRENT_SOURCE_DIR}",
-			"	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}",
-			"-Tpdf ",
-			"\n\\clearpage",
-			"\\label{fig:ablaufdiagramm_zur_kalibrierung_im_sensorkoordinatensystem_ohne_korrektur}",
-			"Ablaufdiagramm zur Kalibrierung im Sensorkoordinatensystem ohne Bewegungskorrektur",
-			"Diagrams"
+			"-o ${CMAKE_CURRENT_SOURCE"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1332,7 +1366,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -1361,13 +1395,17 @@
 		]
 	},
 	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 116.0
+	},
 	"output.astyle_error_message":
 	{
 		"height": 116.0
 	},
 	"output.exec":
 	{
-		"height": 127.0
+		"height": 26.0
 	},
 	"output.find_results":
 	{
@@ -1381,7 +1419,7 @@
 	"project": "Masterarbeit.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1391,16 +1429,24 @@
 		"selected_items":
 		[
 			[
+				"",
+				"untitled"
+			],
+			[
+				"ein",
+				"Documents/Einleitung.md"
+			],
+			[
+				"abk",
+				"Additions/Abkuerzungen.tex"
+			],
+			[
 				"ak",
 				"Additions/Abkuerzungen.tex"
 			],
 			[
 				"tit",
 				"Additions/Titelseite.tex"
-			],
-			[
-				"abk",
-				"Additions/Abkuerzungen.tex"
 			],
 			[
 				"kal",
@@ -1413,10 +1459,6 @@
 			[
 				"abkr",
 				"Additions/Abkuerzungen.tex"
-			],
-			[
-				"",
-				"Additions/Titelseite.tex"
 			]
 		],
 		"width": 0.0
@@ -1447,7 +1489,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 293.0,
+	"side_bar_width": 299.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

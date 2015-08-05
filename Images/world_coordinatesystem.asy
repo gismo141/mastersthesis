@@ -1,16 +1,23 @@
-settings.render = 16;
-shipout(scale(4.0)*currentpicture.fit());
+//settings.render = 16;
 import three;
 import graph3;
 import solids;
-currentprojection=orthographic(3, 3, 2);
+currentprojection=orthographic(9, 3, 2);
+currentlight=nolight;
 
 size(16cm);
 
-draw(surface(sphere(O,.7)),surfacepen=green+white+opacity(0.2), meshpen=0.2*white);
-draw(arc(c=O,-.7Z, .7Z, normal=X), black, L=Label("$Greenwich$", position=Relative(0.8), align=E));
-draw(arc(c=O,.7Y, .7Y, normal=Z), black, L=Label("$Equator$"));
+real RE = 1;
+revolution Earth=sphere(O, RE, 9);
 
-draw(rotate(45, Y) * (.7Z--1.2Z), red, Arrow3(emissive(red)), L=Label("$Z_{world}$", position=EndPoint));
-draw(arc(c=O,.7X, .7(X+Z)), red, arrow=Arrow3(emissive(red)), L=Label("$Longitude$"));
-draw(arc(c=O,.7Y, .7X), red, arrow=Arrow3(emissive(red)), L=Label("$Latitude$"));
+draw(surface(Earth),surfacepen=white+green+opacity(.1), meshpen=0.6*white);
+draw(Earth,m=10,0.6*white);
+
+//draw(rotate(90,X) * path3(unitcircle), black, L=Label("$Greenwich$"));
+//draw(path3(unitcircle), black, L=Label("$Equator$"));
+
+//draw(rotate(45, Z) * rotate(45, Y) * (Z--1.5Z), red, Arrow3(emissive(red)), L=Label("$Z_{world}$", position=EndPoint));
+//draw(path3(arc((0,0),1,0,45)), red, arrow=Arrow3(emissive(red)), L=Label("$Longitude$"));
+//draw(rotate(45,Z) * rotate(90,X) * path3(arc((0,0),1,0,45)), red, arrow=Arrow3(emissive(red)), L=Label("$Latitude$"));
+
+//draw(rotate(45,Y) * surface(path3(unitsquare)), green+opacity(0.2));
