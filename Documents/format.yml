@@ -1,7 +1,7 @@
 ---
 title: Masterarbeit
 subtitle: Relative extrinsische Kalibrierung von bildgebenden Umweltsensoren
-date: 30.08.2015
+date: 31.08.2015
 location: Neubiberg
 documentclass: scrbook
 classoption: |
@@ -30,19 +30,18 @@ linkcolor: black
 citecolor: black
 urlcolor: black
 header-includes:
-    - tikz
-    - glossaries
+    - \input{\string~/.pandoc/templates/tikz}
+    - \input{\string~/.pandoc/templates/glossaries}
 glossaries:
     - Additions/Abkuerzungen
 include-before:
     - Additions/Titelseite
 linestretch: "1.5"
-listGlossary: true
 listAlgorithms: false
+listings: true
 numbersections: true
-# abstract: Blubbeldiblubd
-# thanks: "Ich danke rechtherzlich meinem Dozenten Professor Dr. Harald Görl, der mir die Chance und sein Vertrauen gab, diese Masterarbeit zu ermöglichen und mir durch die anregenden Gespräche ein unvergleichlich interessantes Studium gestaltete.
-#         Des Weiteren bedanke ich mich bei Stefan Krause, der stets meinen Fragen mit Rat und Tat zur Seite stand und mich erstklassig betreute.
-#         Ebenfalls danke ich allen Mitarbeitern und Co-Studenten am DLR in Braunschweig, für die freundliche Aufnahme, die gewonnenen Erkenntnisse und das angenehme Arbeitsumfeld.
-#         Ich danke meinen Eltern für die tatkräftige Unterstützung bei meinen Studien und ganz besonders meiner Frau, Ramona Riedel, und ihren Eltern, die mir jederzeit motivierend zur Seite standen."
+authorship: "Der Verfasser erklärt, dass er die vorliegende Arbeit selbstständig, ohne fremde Hilfe und ohne Benutzung anderer als der angegebenen Hilfsmittel angefertigt hat. Die aus fremden Quellen (einschließlich elektronischer Quellen) direkt oder indirekt übernommenen Gedanken sind ausnahmslos als solche kenntlich gemacht. Die Arbeit ist in gleicher oder ähnlicher Form oder auszugsweise im Rahmen einer anderen Prüfung noch nicht vorgelegt worden."
+abstract: "Unmanned aircraft are used, to fulfil tasks that are dirty, dangerous and demeaning for human beings. Some applications require a map of the environment, that can be generated with LiDAR-sensors. The mapping is done by consecutively registering the laser-generated point-clouds with a manually measured mounting-pose between the LiDAR and NAV sensors (IMU and GNSS). The registration fails, when the mounting-pose is inaccurate. In this thesis a method for an automated relative extrinsic calibration between the LiDAR and NAV is proposed, that uses a non-linear optimisation (Levenberg-Marquardt) to optimize the given mounting-pose. The results show, that the calibration may fail when the point-cloud data suffers from geometric instability, therefore filter-techniques such as covariance-sampling are presented to improve the point-cloud-data. This approach is promising and needs further investigation concerning the parametrization of the proposed techniques."
+zusammenfassung : "Unbemannte Luftfahrzeuge werden verwendet, um für den Menschen niedere, gefährliche und zermürbende Aufgaben zu erfüllen. Für anspruchsvolle Anwendungen werden Umgebungskarten benötigt, die mit LiDAR-Sensoren erstellt werden. Dabei werden Punktwolken anhand der Montagepose des LiDAR zu NAV-Sensoren (IMU und GNSS) registriert. Die Genauigkeit der Montagepose, die bisher ungenau und aufwendig von Hand vermessen wird, entscheidet über die Qualität der Karte. In dieser Arbeit wird ein Ansatz zur automatisierten relativen Kalibrierung von LiDAR zu NAV vorgestellt, der die Montagepose durch eine nicht-lineare Optimierung (nach Levenberg-Marquardt) bestimmt. Die Ergebnisse zeigen, dass die Kalibrierung fehlschlagen kann, wenn die Punktwolken geometrisch instabil sind, weswegen Filter-Techniken wie das Kovarianz-Downsampling vorgestellt werden, um die Punktwolken-Daten zu verbessern. Der Ansatz ist vielversprechend. Weitere Forschung bezüglich der Parametrierung der vorgestellten Techniken ist angebracht und sinnvoll."
+thanks: "Ich danke meinem Dozenten Prof. Dr. Harald Görl, der mir die Chance und sein Vertrauen gab, diese Masterarbeit zu ermöglichen und mir durch die anregenden Gespräche ein unvergleichlich interessantes Studium gestaltete. Des Weiteren danke ich Stefan Krause, der meinen Fragen und Problemen stets mit Rat und Tat zur Seite stand und mich erstklassig betreute sowie allen Mitarbeitern und Co-Studenten am DLR in Braunschweig für die freundliche Aufnahme, die gewonnenen Erkenntnisse und das angenehme Arbeitsumfeld. Ich danke meinen Eltern für die tatkräftige Unterstützung während meines Studiums und ganz besonders meiner Frau, Ramona Riedel, und ihrer Familie, die mir jederzeit motivierend zur Seite stand."
 ---

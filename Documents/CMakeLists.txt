@@ -1,5 +1,5 @@
 set(TEMPLATE t_thesis.tex)
-set(BIBLIOGRAPHY "$ENV{HOME}/bibtex/library.bib")
+set(BIBLIOGRAPHY "library.bib")
 set(CSL "zeitschrift-fur-internationale-beziehungen.csl")
 set(MASTERTHESIS Masterarbeit.md)
 
@@ -15,12 +15,13 @@ set(MASTERTHESIS Masterarbeit.md)
 add_document(
 	Masterarbeit.pdf
 	SOURCES				format.yml ${MASTERTHESIS} ${CSL}
-	RESOURCE_FILES		../Images/athene.pdf
-	RESOURCE_DIRS		../Additions ../Images
-	PANDOC_DIRECTIVES 	-t latex
-						--smart
+	RESOURCE_FILES		../Images/athene.pdf ../Research/library.bib
+	RESOURCE_DIRS		../Additions ../Graphs ../Images
+	PANDOC_DIRECTIVES 	--smart
 						--self-contained
-						--listings
+						--from markdown
+						--to latex
+						--highlight-style haddock
 						--toc
 						-Vlof
 						-Vlot
