@@ -1,0 +1,170 @@
+/*
+ * Core CSS scaffold for Scholarly Markdown HTML v0.1.2
+ *
+ * Copyright 2013 Tim T.Y. Lin
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+table {
+  display: inline-table;
+}
+
+code {
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+       -o-hyphens: none;
+          hyphens: none;
+  word-break: keep-all;
+  word-wrap: break-word;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+pre code {
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+       -o-hyphens: none;
+          hyphens: none;
+  word-break: keep-all;
+  word-wrap: break-word;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.references a {
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+       -o-hyphens: none;
+          hyphens: none;
+  -ms-word-break: break-all;
+      word-break: break-word;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.scholmd-float-caption .scholmd-caption-head {
+  font-weight: bold;
+}
+
+.scholmd-float-caption .scholmd-caption-head-prefix:after {
+  content: "\a0";
+}
+
+.scholmd-caption-head:after {
+  content: " ";
+}
+
+.scholmd-float {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 10px;
+  margin: 20px auto 20px;
+}
+
+.scholmd-float-content {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.scholmd-widefloat > .scholmd-float-content {
+  width: 90%;
+}
+
+.scholmd-subfig {
+  height: auto;
+  max-width: 100%;
+  padding: 0 5px 0px;
+  margin: 0 auto 5px;
+}
+
+.scholmd-float-caption {
+  width: 90%;
+  padding: 10px 0 5px;
+  margin: 0 auto 0px;
+  text-align: center;
+}
+
+.scholmd-float-caption figcaption {
+  text-align: justify;
+}
+
+.scholmd-float-subcaption {
+  float: left;
+  width: 100%;
+  padding: 5px;
+  margin: 0 auto 0px;
+  text-align: center;
+}
+
+.scholmd-float-subcaption figcaption {
+  text-align: left;
+}
+
+figcaption {
+  display: inline-block;
+}
+
+.scholmd-float-content img {
+  width: 100%;
+}
+
+.scholmd-algorithm > .scholmd-float-content {
+  padding: 6px 0 6px;
+  text-align: left;
+}
+
+.scholmd-algorithm > .scholmd-float-content p {
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+       -o-hyphens: none;
+          hyphens: none;
+  -ms-word-break: keep-all;
+      word-break: keep-all;
+  word-wrap: break-word;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.scholmd-table-float > .scholmd-float-content {
+  width: auto;
+  padding: 0;
+  margin: 0 auto 5px;
+}
+
+.scholmd-listing-float > .scholmd-float-content pre {
+  text-align: left;
+}
+
+.scholmd-listing-float > .scholmd-float-content table {
+  width: auto;
+  max-width: 100%;
+  text-align: left;
+  white-space: pre;
+}
+
+.scholmd-float-content {
+  overflow-x: auto;
+}
+
+.scholmd-math-display {
+  overflow-x: auto;
+}
+
+.scholmd-figure > .scholmd-float-content {
+  overflow-x: visible;
+}
